@@ -7,7 +7,7 @@ idf_component_register(
         "."
         #"${CMAKE_CURRENT_LIST_DIR}/../managed_components/espressif__esp-zigbee-lib/include"
         #"${CMAKE_CURRENT_LIST_DIR}/../managed_components/espressif__esp-zboss-lib/include"
-        "${CMAKE_CURRENT_LIST_DIR}/../components/SensorVL53L0/include"
+        #"${CMAKE_CURRENT_LIST_DIR}/../components/SensorVL53L0/include"
     REQUIRES
         #espressif__esp-zigbee-lib
         #espressif__esp-zboss-lib
@@ -19,5 +19,5 @@ idf_component_register(
         esp_wifi
         esp_netif
         mqtt 
-        SensorVL53L0
+        #SensorVL53L0
 )                       
