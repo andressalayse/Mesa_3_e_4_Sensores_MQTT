@@ -1,0 +1,1108 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x28 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c110,len:0xe2c
+load:0x4086e610,len:0x2e5c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 10 2026 01:58:25[0m
+[0;32mI (24) boot: chip revision: v0.2[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=420b0020 size=28168h (164200) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00038190 vaddr=40800000 size=07e88h ( 32392) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=acbach (707500) map[0m
+[0;32mI (281) esp_image: segment 3: paddr=000ecbd4 vaddr=40807e88 size=10a10h ( 68112) load[0m
+[0;32mI (298) esp_image: segment 4: paddr=000fd5ec vaddr=408188a0 size=03b48h ( 15176) load[0m
+[0;32mI (308) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (309) boot: Disabling RNG early entropy source...[0m
+[0;32mI (321) cpu_start: Unicore app[0m
+[0;32mI (329) cpu_start: Pro cpu start user code[0m
+[0;32mI (329) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (330) app_init: Application information:[0m
+[0;32mI (332) app_init: Project name:     app-template[0m
+[0;32mI (337) app_init: App version:      1[0m
+[0;32mI (342) app_init: Compile time:     Apr 10 2026 01:56:56[0m
+[0;32mI (348) app_init: ELF file SHA256:  3a8db1ecd...[0m
+[0;32mI (353) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (358) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (363) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (368) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (373) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (380) heap_init: At 40821DB0 len 0005A860 (362 KiB): RAM[0m
+[0;32mI (386) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (392) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (399) spi_flash: detected chip: generic[0m
+[0;32mI (403) spi_flash: flash io: dio[0m
+[0;33mW (407) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (421) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (427) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (434) coexist: coex firmware version: 4482466[0m
+[0;32mI (449) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (449) main_task: Started on CPU0[0m
+[0;32mI (449) main_task: Calling app_main()[0m
+[0;32mI (459) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (459) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (469) wifi:wifi driver task: 4082ae20, prio:23, stack:6656, core=0[0m
+[0;32mI (479) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (479) wifi:wifi certification version: v7.0[0m
+[0;32mI (479) wifi:config NVS flash: enabled[0m
+[0;32mI (479) wifi:config nano formating: disabled[0m
+[0;32mI (479) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (489) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (489) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (499) wifi:Init management short buffer num: 32[0m
+[0;32mI (499) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (509) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (509) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (519) wifi:Init static rx buffer num: 10[0m
+[0;32mI (519) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (519) wifi_init: rx ba win: 6[0m
+[0;32mI (529) wifi_init: accept mbox: 6[0m
+[0;32mI (529) wifi_init: tcpip mbox: 32[0m
+[0;32mI (539) wifi_init: udp mbox: 6[0m
+[0;32mI (539) wifi_init: tcp mbox: 6[0m
+[0;32mI (539) wifi_init: tcp tx win: 5760[0m
+[0;32mI (549) wifi_init: tcp rx win: 5760[0m
+[0;32mI (549) wifi_init: tcp mss: 1440[0m
+[0;32mI (559) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (559) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (559) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (579) phy_init: phy_version 310,dde1ba9,Jun  4 2024,16:38:11[0m
+[0;33mW (659) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (659) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (669) wifi:(agc)0x600a7128:0xd2103800, min.avgNF:0xce->0xd2(dB), RCalCount:0x102, min.RRssi:0x800(-128.00)[0m
+[0;33mW (679) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (679) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (679) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (689) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (689) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (689) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (699) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (699) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (699) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (709) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (709) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (709) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (719) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (719) wifi:(he)attach, station, phymode:11ax[0m
+[0;32mI (729) wifi:mode : sta (58:8c:81:30:19:d0)[0m
+[0;32mI (729) wifi:enable tsf[0m
+[0;32mI (1049) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1049) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (1059) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1059) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1109) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1109) wifi:(trc)phytype:CBW20-SGI, snr:34, maxRate:144, highestRateIdx:0[0m
+[0;33mW (1119) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (1119) wifi:(trc)band:2G, rate(L-MCS7, rateIdx:1), ampdu(rate:L-MCS7, schedIdx(1, stop:8)), snr:34, ampduState:wait operational[0m
+[0;32mI (1129) wifi:ifidx:0, rssi:-62, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (1139) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (1159) wifi:connected with PROJETO, aid = 1, channel 1, BW20, bssid = 58:8c:81:30:19:19[0m
+[0;32mI (1159) wifi:cipher(pairwise:0x3, group:0x3), pmf:1, security:WPA2-PSK, phy:11bgn, rssi:-62[0m
+[0;32mI (1179) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (1179) wifi:pm start, type:1, aid:0x1, trans-BSSID:58:8c:81:30:19:19, BSSID[5]:0x19, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (1179) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1189) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (1199) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (1209) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (1219) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (1229) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1239) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1249) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (1249) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (1259) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (2269) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (2269) SENSORES_MQTT: ✅ Wi-Fi conectado[0m
+[0;32mI (4269) SENSORES_MQTT: Wi-Fi OK → iniciando MQTT[0m
+[0;32mI (4269) SENSORES_MQTT: MQTT iniciado[0m
+[0;32mI (4269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;33mW (4279) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x1001919, TALO:0x30818c58, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (6269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (8269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (9279) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (9279) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (9279) mqtt_client: Error transport connect[0m
+[0;33mW (9279) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (9289) mqtt_client: Client force reconnect requested[0m
+[0;32mI (10269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (12269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (14269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (14299) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (14299) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (14299) mqtt_client: Error transport connect[0m
+[0;33mW (14299) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (14309) mqtt_client: Client force reconnect requested[0m
+[0;32mI (16269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (18269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (19329) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (19329) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (19329) mqtt_client: Error transport connect[0m
+[0;33mW (19329) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (19339) mqtt_client: Client force reconnect requested[0m
+[0;32mI (20269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (22269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (24269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (24359) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (24359) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (24359) mqtt_client: Error transport connect[0m
+[0;33mW (24359) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (24369) mqtt_client: Client force reconnect requested[0m
+[0;32mI (26269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (28269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (29389) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (29389) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (29389) mqtt_client: Error transport connect[0m
+[0;33mW (29389) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (29399) mqtt_client: Client force reconnect requested[0m
+[0;32mI (30269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (32269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (34269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (34419) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (34419) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (34419) mqtt_client: Error transport connect[0m
+[0;33mW (34419) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (34429) mqtt_client: Client force reconnect requested[0m
+[0;32mI (36269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (38269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (39449) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (39449) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (39449) mqtt_client: Error transport connect[0m
+[0;33mW (39449) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (39459) mqtt_client: Client force reconnect requested[0m
+[0;32mI (40269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (42269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (44269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (44479) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (44479) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (44479) mqtt_client: Error transport connect[0m
+[0;33mW (44479) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (44489) mqtt_client: Client force reconnect requested[0m
+[0;32mI (46269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (48269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (49509) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (49509) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (49509) mqtt_client: Error transport connect[0m
+[0;33mW (49509) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (49519) mqtt_client: Client force reconnect requested[0m
+[0;32mI (50269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (52269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (54269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (54539) esp-tls: [sock=54] select() timeout[0m
+[0;31m[1;31mE (54539) transport_base: Failed to open a new connection: 32774[0m[0m
+[0;31mE (54539) mqtt_client: Error transport connect[0m
+[0;33mW (54539) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (54549) mqtt_client: Client force reconnect requested[0m
+[0;32mI (56269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (58269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (59569) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (59569) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (59569) mqtt_client: Error transport connect[0m
+[0;33mW (59569) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (59579) mqtt_client: Client force reconnect requested[0m
+[0;32mI (60269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (62269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (64269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (64599) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (64599) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (64599) mqtt_client: Error transport connect[0m
+[0;33mW (64599) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (64609) mqtt_client: Client force reconnect requested[0m
+[0;32mI (66269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (68269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (69629) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (69629) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (69629) mqtt_client: Error transport connect[0m
+[0;33mW (69629) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (69639) mqtt_client: Client force reconnect requested[0m
+[0;32mI (70269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (72269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (74269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (74659) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (74659) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (74659) mqtt_client: Error transport connect[0m
+[0;33mW (74659) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (74669) mqtt_client: Client force reconnect requested[0m
+[0;32mI (76269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (78269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (79689) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (79689) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (79689) mqtt_client: Error transport connect[0m
+[0;33mW (79689) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (79699) mqtt_client: Client force reconnect requested[0m
+[0;32mI (80269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (82269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (84269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (84719) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (84719) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (84719) mqtt_client: Error transport connect[0m
+[0;33mW (84719) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (84729) mqtt_client: Client force reconnect requested[0m
+[0;32mI (86269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (88269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (89749) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (89749) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (89749) mqtt_client: Error transport connect[0m
+[0;33mW (89749) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (89759) mqtt_client: Client force reconnect requested[0m
+[0;32mI (90269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (92269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (94269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (94779) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (94779) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (94779) mqtt_client: Error transport connect[0m
+[0;33mW (94779) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (94789) mqtt_client: Client force reconnect requested[0m
+[0;32mI (96269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (98269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (99809) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (99809) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (99809) mqtt_client: Error transport connect[0m
+[0;33mW (99809) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (99819) mqtt_client: Client force reconnect requested[0m
+[0;32mI (100269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (102269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (104269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (104839) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (104839) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (104839) mqtt_client: Error transport connect[0m
+[0;33mW (104839) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (104849) mqtt_client: Client force reconnect requested[0m
+[0;32mI (106269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (108269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (109869) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (109869) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (109869) mqtt_client: Error transport connect[0m
+[0;33mW (109869) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (109879) mqtt_client: Client force reconnect requested[0m
+[0;32mI (110269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (112269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (114269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (114899) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (114899) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (114899) mqtt_client: Error transport connect[0m
+[0;33mW (114899) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (114909) mqtt_client: Client force reconnect requested[0m
+[0;32mI (116269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (118269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (119929) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (119929) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (119929) mqtt_client: Error transport connect[0m
+[0;33mW (119929) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (119939) mqtt_client: Client force reconnect requested[0m
+[0;32mI (120269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (122269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (124269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (124959) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (124959) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (124959) mqtt_client: Error transport connect[0m
+[0;33mW (124959) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (124969) mqtt_client: Client force reconnect requested[0m
+[0;32mI (126269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (128269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (129989) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (129989) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (129989) mqtt_client: Error transport connect[0m
+[0;33mW (129989) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (129999) mqtt_client: Client force reconnect requested[0m
+[0;32mI (130269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (132269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (134269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (135019) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (135019) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (135019) mqtt_client: Error transport connect[0m
+[0;33mW (135019) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (135029) mqtt_client: Client force reconnect requested[0m
+[0;32mI (136269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (138269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (140049) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (140049) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (140049) mqtt_client: Error transport connect[0m
+[0;33mW (140049) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (140059) mqtt_client: Client force reconnect requested[0m
+[0;32mI (140269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (142269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (144269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (145079) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (145079) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (145079) mqtt_client: Error transport connect[0m
+[0;33mW (145079) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (145089) mqtt_client: Client force reconnect requested[0m
+[0;32mI (146269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (148269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (150109) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (150109) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (150109) mqtt_client: Error transport connect[0m
+[0;33mW (150109) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (150119) mqtt_client: Client force reconnect requested[0m
+[0;32mI (150269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (152269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (154269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (155139) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (155139) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (155139) mqtt_client: Error transport connect[0m
+[0;33mW (155139) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (155149) mqtt_client: Client force reconnect requested[0m
+[0;32mI (156269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (158269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (160169) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (160169) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (160169) mqtt_client: Error transport connect[0m
+[0;33mW (160169) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (160179) mqtt_client: Client force reconnect requested[0m
+[0;32mI (160269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (162269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (164269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (165199) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (165199) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (165199) mqtt_client: Error transport connect[0m
+[0;33mW (165199) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (165209) mqtt_client: Client force reconnect requested[0m
+[0;32mI (166269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (168269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (170229) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (170229) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (170229) mqtt_client: Error transport connect[0m
+[0;33mW (170229) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (170239) mqtt_client: Client force reconnect requested[0m
+[0;32mI (170269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (172269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (174269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (175259) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (175259) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (175259) mqtt_client: Error transport connect[0m
+[0;33mW (175259) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (175269) mqtt_client: Client force reconnect requested[0m
+[0;32mI (176269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (178269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (180269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (180289) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (180289) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (180289) mqtt_client: Error transport connect[0m
+[0;33mW (180289) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (180299) mqtt_client: Client force reconnect requested[0m
+[0;32mI (182269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (184269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (185319) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (185319) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (185319) mqtt_client: Error transport connect[0m
+[0;33mW (185319) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (185329) mqtt_client: Client force reconnect requested[0m
+[0;32mI (186269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (188269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (190269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (190349) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (190349) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (190349) mqtt_client: Error transport connect[0m
+[0;33mW (190349) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (190359) mqtt_client: Client force reconnect requested[0m
+[0;32mI (192269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (194269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (195379) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (195379) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (195379) mqtt_client: Error transport connect[0m
+[0;33mW (195379) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (195389) mqtt_client: Client force reconnect requested[0m
+[0;32mI (196269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (198269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (200269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (200409) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (200409) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (200409) mqtt_client: Error transport connect[0m
+[0;33mW (200409) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (200419) mqtt_client: Client force reconnect requested[0m
+[0;32mI (202269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (204269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (205439) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (205439) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (205439) mqtt_client: Error transport connect[0m
+[0;33mW (205439) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (205449) mqtt_client: Client force reconnect requested[0m
+[0;32mI (206269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (208269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (210269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (210469) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (210469) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (210469) mqtt_client: Error transport connect[0m
+[0;33mW (210469) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (210479) mqtt_client: Client force reconnect requested[0m
+[0;32mI (212269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (214269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (215499) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (215499) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (215499) mqtt_client: Error transport connect[0m
+[0;33mW (215499) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (215509) mqtt_client: Client force reconnect requested[0m
+[0;32mI (216269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (218269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (220269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (220529) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (220529) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (220529) mqtt_client: Error transport connect[0m
+[0;33mW (220529) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (220539) mqtt_client: Client force reconnect requested[0m
+[0;32mI (222269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (224269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (225559) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (225559) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (225559) mqtt_client: Error transport connect[0m
+[0;33mW (225559) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (225569) mqtt_client: Client force reconnect requested[0m
+[0;32mI (226269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (228269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (230269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (230589) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (230589) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (230589) mqtt_client: Error transport connect[0m
+[0;33mW (230589) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (230599) mqtt_client: Client force reconnect requested[0m
+[0;32mI (232269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (234269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (235619) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (235619) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (235619) mqtt_client: Error transport connect[0m
+[0;33mW (235619) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (235629) mqtt_client: Client force reconnect requested[0m
+[0;32mI (236269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (238269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (240269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (240649) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (240649) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (240649) mqtt_client: Error transport connect[0m
+[0;33mW (240649) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (240659) mqtt_client: Client force reconnect requested[0m
+[0;32mI (242269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (244269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (245679) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (245679) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (245679) mqtt_client: Error transport connect[0m
+[0;33mW (245679) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (245689) mqtt_client: Client force reconnect requested[0m
+[0;32mI (246269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (248269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (250269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (250709) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (250709) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (250709) mqtt_client: Error transport connect[0m
+[0;33mW (250709) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (250719) mqtt_client: Client force reconnect requested[0m
+[0;32mI (252269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (254269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (255739) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (255739) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (255739) mqtt_client: Error transport connect[0m
+[0;33mW (255739) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (255749) mqtt_client: Client force reconnect requested[0m
+[0;32mI (256269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (258269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (260269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (260769) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (260769) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (260769) mqtt_client: Error transport connect[0m
+[0;33mW (260769) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (260779) mqtt_client: Client force reconnect requested[0m
+[0;32mI (262269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (264269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (265799) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (265799) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (265799) mqtt_client: Error transport connect[0m
+[0;33mW (265799) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (265809) mqtt_client: Client force reconnect requested[0m
+[0;32mI (266269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (268269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (270269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (270829) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (270829) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (270829) mqtt_client: Error transport connect[0m
+[0;33mW (270829) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (270839) mqtt_client: Client force reconnect requested[0m
+[0;32mI (272269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (274269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (275859) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (275859) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (275859) mqtt_client: Error transport connect[0m
+[0;33mW (275859) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (275869) mqtt_client: Client force reconnect requested[0m
+[0;32mI (276269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (278269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (280269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (280889) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (280889) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (280889) mqtt_client: Error transport connect[0m
+[0;33mW (280889) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (280899) mqtt_client: Client force reconnect requested[0m
+[0;32mI (282269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (284269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (285919) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (285919) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (285919) mqtt_client: Error transport connect[0m
+[0;33mW (285919) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (285929) mqtt_client: Client force reconnect requested[0m
+[0;32mI (286269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (288269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (290269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (290949) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (290949) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (290949) mqtt_client: Error transport connect[0m
+[0;33mW (290949) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (290959) mqtt_client: Client force reconnect requested[0m
+[0;32mI (292269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (294269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (295979) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (295979) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (295979) mqtt_client: Error transport connect[0m
+[0;33mW (295979) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (295989) mqtt_client: Client force reconnect requested[0m
+[0;32mI (296269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (298269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (300269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (301009) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (301009) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (301009) mqtt_client: Error transport connect[0m
+[0;33mW (301009) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (301019) mqtt_client: Client force reconnect requested[0m
+[0;32mI (302269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (304269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (306039) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (306039) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (306039) mqtt_client: Error transport connect[0m
+[0;33mW (306039) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (306049) mqtt_client: Client force reconnect requested[0m
+[0;32mI (306269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (308269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (310269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (311069) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (311069) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (311069) mqtt_client: Error transport connect[0m
+[0;33mW (311069) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (311079) mqtt_client: Client force reconnect requested[0m
+[0;32mI (312269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (314269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (316099) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (316099) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (316099) mqtt_client: Error transport connect[0m
+[0;33mW (316099) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (316109) mqtt_client: Client force reconnect requested[0m
+[0;32mI (316269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (318269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (320269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (321129) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (321129) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (321129) mqtt_client: Error transport connect[0m
+[0;33mW (321129) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (321139) mqtt_client: Client force reconnect requested[0m
+[0;32mI (322269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (324269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (326159) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (326159) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (326159) mqtt_client: Error transport connect[0m
+[0;33mW (326159) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (326169) mqtt_client: Client force reconnect requested[0m
+[0;32mI (326269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (328269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (330269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (331189) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (331189) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (331189) mqtt_client: Error transport connect[0m
+[0;33mW (331189) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (331199) mqtt_client: Client force reconnect requested[0m
+[0;32mI (332269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (334269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (336219) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (336219) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (336219) mqtt_client: Error transport connect[0m
+[0;33mW (336219) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (336229) mqtt_client: Client force reconnect requested[0m
+[0;32mI (336269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (338269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (340269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (341249) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (341249) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (341249) mqtt_client: Error transport connect[0m
+[0;33mW (341249) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (341259) mqtt_client: Client force reconnect requested[0m
+[0;32mI (342269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (344269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (346269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (346279) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (346279) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (346279) mqtt_client: Error transport connect[0m
+[0;33mW (346279) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (346289) mqtt_client: Client force reconnect requested[0m
+[0;32mI (348269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (350269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (351309) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (351309) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (351309) mqtt_client: Error transport connect[0m
+[0;33mW (351309) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (351319) mqtt_client: Client force reconnect requested[0m
+[0;32mI (352269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (354269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (356269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (356339) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (356339) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (356339) mqtt_client: Error transport connect[0m
+[0;33mW (356339) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (356349) mqtt_client: Client force reconnect requested[0m
+[0;32mI (358269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (360269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (361369) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (361369) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (361369) mqtt_client: Error transport connect[0m
+[0;33mW (361369) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (361379) mqtt_client: Client force reconnect requested[0m
+[0;32mI (362269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (364269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (366269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (366399) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (366399) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (366399) mqtt_client: Error transport connect[0m
+[0;33mW (366399) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (366409) mqtt_client: Client force reconnect requested[0m
+[0;32mI (368269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (370269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (371429) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (371429) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (371429) mqtt_client: Error transport connect[0m
+[0;33mW (371429) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (371439) mqtt_client: Client force reconnect requested[0m
+[0;32mI (372269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (374269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (376269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (376459) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (376459) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (376459) mqtt_client: Error transport connect[0m
+[0;33mW (376459) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (376469) mqtt_client: Client force reconnect requested[0m
+[0;32mI (378269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (380269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (381489) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (381489) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (381489) mqtt_client: Error transport connect[0m
+[0;33mW (381489) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (381499) mqtt_client: Client force reconnect requested[0m
+[0;32mI (382269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (384269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (386269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (386519) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (386519) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (386519) mqtt_client: Error transport connect[0m
+[0;33mW (386519) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (386529) mqtt_client: Client force reconnect requested[0m
+[0;32mI (388269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (390269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (391549) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (391549) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (391549) mqtt_client: Error transport connect[0m
+[0;33mW (391549) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (391559) mqtt_client: Client force reconnect requested[0m
+[0;32mI (392269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (394269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (396269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (396579) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (396579) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (396579) mqtt_client: Error transport connect[0m
+[0;33mW (396579) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (396589) mqtt_client: Client force reconnect requested[0m
+[0;32mI (398269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (400269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (401609) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (401609) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (401609) mqtt_client: Error transport connect[0m
+[0;33mW (401609) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (401619) mqtt_client: Client force reconnect requested[0m
+[0;32mI (402269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (404269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (406269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (406639) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (406639) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (406639) mqtt_client: Error transport connect[0m
+[0;33mW (406639) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (406649) mqtt_client: Client force reconnect requested[0m
+[0;32mI (408269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (410269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (411669) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (411669) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (411669) mqtt_client: Error transport connect[0m
+[0;33mW (411669) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (411679) mqtt_client: Client force reconnect requested[0m
+[0;32mI (412269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (414269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (416269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (416699) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (416699) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (416699) mqtt_client: Error transport connect[0m
+[0;33mW (416699) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (416709) mqtt_client: Client force reconnect requested[0m
+[0;32mI (418269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (420269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (421729) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (421729) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (421729) mqtt_client: Error transport connect[0m
+[0;33mW (421729) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (421739) mqtt_client: Client force reconnect requested[0m
+[0;32mI (422269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (424269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (426269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (426759) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (426759) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (426759) mqtt_client: Error transport connect[0m
+[0;33mW (426759) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (426769) mqtt_client: Client force reconnect requested[0m
+[0;32mI (428269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (430269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (431789) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (431789) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (431789) mqtt_client: Error transport connect[0m
+[0;33mW (431789) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (431799) mqtt_client: Client force reconnect requested[0m
+[0;32mI (432269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (434269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (436269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (436819) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (436819) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (436819) mqtt_client: Error transport connect[0m
+[0;33mW (436819) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (436829) mqtt_client: Client force reconnect requested[0m
+[0;32mI (438269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (440269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (441849) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (441849) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (441849) mqtt_client: Error transport connect[0m
+[0;33mW (441849) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (441859) mqtt_client: Client force reconnect requested[0m
+[0;32mI (442269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (444269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (446269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (446879) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (446879) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (446879) mqtt_client: Error transport connect[0m
+[0;33mW (446879) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (446889) mqtt_client: Client force reconnect requested[0m
+[0;32mI (448269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (450269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (451909) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (451909) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (451909) mqtt_client: Error transport connect[0m
+[0;33mW (451909) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (451919) mqtt_client: Client force reconnect requested[0m
+[0;32mI (452269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (454269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (456269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (456939) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (456939) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (456939) mqtt_client: Error transport connect[0m
+[0;33mW (456939) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (456949) mqtt_client: Client force reconnect requested[0m
+[0;32mI (458269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (460269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (461969) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (461969) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (461969) mqtt_client: Error transport connect[0m
+[0;33mW (461969) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (461979) mqtt_client: Client force reconnect requested[0m
+[0;32mI (462269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (464269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (466269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (466999) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (466999) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (466999) mqtt_client: Error transport connect[0m
+[0;33mW (466999) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (467009) mqtt_client: Client force reconnect requested[0m
+[0;32mI (468269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (470269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (472029) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (472029) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (472029) mqtt_client: Error transport connect[0m
+[0;33mW (472029) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (472039) mqtt_client: Client force reconnect requested[0m
+[0;32mI (472269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (474269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (476269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (477059) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (477059) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (477059) mqtt_client: Error transport connect[0m
+[0;33mW (477059) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (477069) mqtt_client: Client force reconnect requested[0m
+[0;32mI (478269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (480269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (482089) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (482089) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (482089) mqtt_client: Error transport connect[0m
+[0;33mW (482089) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (482099) mqtt_client: Client force reconnect requested[0m
+[0;32mI (482269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (484269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (486269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (487119) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (487119) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (487119) mqtt_client: Error transport connect[0m
+[0;33mW (487119) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (487129) mqtt_client: Client force reconnect requested[0m
+[0;32mI (488269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (490269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (492149) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (492149) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (492149) mqtt_client: Error transport connect[0m
+[0;33mW (492149) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (492159) mqtt_client: Client force reconnect requested[0m
+[0;32mI (492269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (494269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (496269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (497179) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (497179) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (497179) mqtt_client: Error transport connect[0m
+[0;33mW (497179) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (497189) mqtt_client: Client force reconnect requested[0m
+[0;32mI (498269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (500269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (502209) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (502209) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (502209) mqtt_client: Error transport connect[0m
+[0;33mW (502209) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (502219) mqtt_client: Client force reconnect requested[0m
+[0;32mI (502269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (504269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (506269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (507239) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (507239) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (507239) mqtt_client: Error transport connect[0m
+[0;33mW (507239) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (507249) mqtt_client: Client force reconnect requested[0m
+[0;32mI (508269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (510269) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (512269) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (512269) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (512269) mqtt_client: Error transport connect[0m
+[0;33mW (512269) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (512279) mqtt_client: Client force reconnect requested[0m
+[0;32mI (512289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (514289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (516289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (517299) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (517299) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (517299) mqtt_client: Error transport connect[0m
+[0;33mW (517299) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (517309) mqtt_client: Client force reconnect requested[0m
+[0;32mI (518289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (520289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (522289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (522329) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (522329) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (522329) mqtt_client: Error transport connect[0m
+[0;33mW (522329) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (522339) mqtt_client: Client force reconnect requested[0m
+[0;32mI (524289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (526289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (527359) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (527359) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (527359) mqtt_client: Error transport connect[0m
+[0;33mW (527359) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (527369) mqtt_client: Client force reconnect requested[0m
+[0;32mI (528289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (530289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (532289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (532389) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (532389) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (532389) mqtt_client: Error transport connect[0m
+[0;33mW (532389) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (532399) mqtt_client: Client force reconnect requested[0m
+[0;32mI (534289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (536289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (537419) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (537419) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (537419) mqtt_client: Error transport connect[0m
+[0;33mW (537419) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (537429) mqtt_client: Client force reconnect requested[0m
+[0;32mI (538289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (540289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (542289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (542449) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (542449) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (542449) mqtt_client: Error transport connect[0m
+[0;33mW (542449) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (542459) mqtt_client: Client force reconnect requested[0m
+[0;32mI (544289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (546289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (547479) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (547479) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (547479) mqtt_client: Error transport connect[0m
+[0;33mW (547479) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (547489) mqtt_client: Client force reconnect requested[0m
+[0;32mI (548289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (550289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (552289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (552509) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (552509) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (552509) mqtt_client: Error transport connect[0m
+[0;33mW (552509) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (552519) mqtt_client: Client force reconnect requested[0m
+[0;32mI (554289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (556289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (557539) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (557539) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (557539) mqtt_client: Error transport connect[0m
+[0;33mW (557539) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (557549) mqtt_client: Client force reconnect requested[0m
+[0;32mI (558289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (560289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (562289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (562569) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (562569) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (562569) mqtt_client: Error transport connect[0m
+[0;33mW (562569) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (562579) mqtt_client: Client force reconnect requested[0m
+[0;32mI (564289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (566289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (567599) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (567599) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (567599) mqtt_client: Error transport connect[0m
+[0;33mW (567599) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (567609) mqtt_client: Client force reconnect requested[0m
+[0;32mI (568289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (570289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (572289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (572629) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (572629) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (572629) mqtt_client: Error transport connect[0m
+[0;33mW (572629) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (572639) mqtt_client: Client force reconnect requested[0m
+[0;32mI (574289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (576289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (577659) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (577659) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (577659) mqtt_client: Error transport connect[0m
+[0;33mW (577659) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (577669) mqtt_client: Client force reconnect requested[0m
+[0;32mI (578289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (580289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (582289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (582689) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (582689) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (582689) mqtt_client: Error transport connect[0m
+[0;33mW (582689) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (582699) mqtt_client: Client force reconnect requested[0m
+[0;32mI (584289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (586289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (587719) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (587719) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (587719) mqtt_client: Error transport connect[0m
+[0;33mW (587719) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (587729) mqtt_client: Client force reconnect requested[0m
+[0;32mI (588289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (590289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (592289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (592749) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (592749) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (592749) mqtt_client: Error transport connect[0m
+[0;33mW (592749) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (592759) mqtt_client: Client force reconnect requested[0m
+[0;32mI (594289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (596289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;31mE (597779) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (597779) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (597779) mqtt_client: Error transport connect[0m
+[0;33mW (597779) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (597789) mqtt_client: Client force reconnect requested[0m
+[0;32mI (598289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (598539) wifi:bcn_timeout,ap_probe_send_start[0m
+[0;32mI (600289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (601039) wifi:ap_probe_send over, resett wifi status to disassoc[0m
+[0;32mI (601039) wifi:state: run -> init (0xc800)[0m
+[0;32mI (601049) wifi:pm stop, total sleep time: 556199952 us / 599863625 us[0m
+
+[0;32mI (601049) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (601049) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (601049) SENSORES_MQTT: Wi-Fi desconectado[0m
+[0;31mE (601059) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[0;31mE (601069) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (601069) mqtt_client: Error transport connect[0m
+[0;33mW (601079) SENSORES_MQTT: MQTT desconectado, reconectando...[0m
+[0;32mI (601079) mqtt_client: Client force reconnect requested[0m
+[0;32mI (602289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;33mW (603499) SENSORES_MQTT: Wi-Fi desconectado[0m
+[0;33mW (603499) mqtt_client: Client asked to stop, but was not started[0m
+[0;32mI (604289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;33mW (605899) SENSORES_MQTT: Wi-Fi desconectado[0m
+[0;33mW (605899) mqtt_client: Client asked to stop, but was not started[0m
+[0;32mI (606289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (608289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;33mW (608309) SENSORES_MQTT: Wi-Fi desconectado[0m
+[0;33mW (608309) mqtt_client: Client asked to stop, but was not started[0m
+[0;32mI (610289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;33mW (610709) SENSORES_MQTT: Wi-Fi desconectado[0m
+[0;33mW (610709) mqtt_client: Client asked to stop, but was not started[0m
+[0;32mI (610719) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (610719) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (610729) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (610739) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (610789) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (610789) wifi:(trc)phytype:CBW20-SGI, snr:31, maxRate:144, highestRateIdx:0[0m
+[0;33mW (610789) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (610799) wifi:(trc)band:2G, rate(L-MCS6, rateIdx:2), ampdu(rate:L-MCS6, schedIdx(2, stop:8)), snr:31, ampduState:wait operational[0m
+[0;32mI (610809) wifi:ifidx:0, rssi:-66, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (610819) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (610839) wifi:connected with PROJETO, aid = 1, channel 1, BW20, bssid = 58:8c:81:30:19:19[0m
+[0;32mI (610839) wifi:cipher(pairwise:0x3, group:0x3), pmf:1, security:WPA2-PSK, phy:11bgn, rssi:-66[0m
+[0;32mI (610849) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (610849) wifi:pm start, type:1, aid:0x1, trans-BSSID:58:8c:81:30:19:19, BSSID[5]:0x19, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (610859) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (610869) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (610879) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:4, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (610889) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:5, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (610899) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:6, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (610909) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (610919) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (610919) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (610929) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (610939) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (611949) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (611949) SENSORES_MQTT: ✅ Wi-Fi conectado[0m
+[0;32mI (612289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (614289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (616289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (618289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (620289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (622289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (624289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (626289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (628289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (630289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (632289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (634289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (636289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (638289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (640289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (642289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (644289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (646289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (648289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (650289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (652289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (654289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (656289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (658289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (660289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (662289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (664289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (666289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (668289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (670289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (672289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (674289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (676289) SENSORES_MQTT: Enviando teste MQTT...[0m
+[0;32mI (678289) SENSORES_MQTT: Enviando teste MQTT...[0m

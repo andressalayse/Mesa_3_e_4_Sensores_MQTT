@@ -1,0 +1,2026 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x6e (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c110,len:0xe2c
+load:0x4086e610,len:0x2e5c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May  7 2026 17:30:55[0m
+[0;32mI (24) boot: chip revision: v0.2[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=420b8020 size=3f554h (259412) map[0m
+[0;32mI (146) esp_image: segment 1: paddr=0004f57c vaddr=40800000 size=00a9ch (  2716) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=b1950h (727376) map[0m
+[0;32mI (302) esp_image: segment 3: paddr=00101978 vaddr=40800a9c size=192ech (103148) load[0m
+[0;32mI (327) esp_image: segment 4: paddr=0011ac6c vaddr=40819d90 size=03b90h ( 15248) load[0m
+[0;32mI (337) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (338) boot: Disabling RNG early entropy source...[0m
+[0;32mI (349) cpu_start: Unicore app[0m
+[0;32mI (358) cpu_start: Pro cpu start user code[0m
+[0;32mI (358) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (358) app_init: Application information:[0m
+[0;32mI (361) app_init: Project name:     app-template[0m
+[0;32mI (366) app_init: App version:      1[0m
+[0;32mI (371) app_init: Compile time:     May  7 2026 17:30:04[0m
+[0;32mI (377) app_init: ELF file SHA256:  30a235799...[0m
+[0;32mI (382) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (387) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (392) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (397) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (402) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (409) heap_init: At 40824860 len 00057DB0 (351 KiB): RAM[0m
+[0;32mI (415) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (421) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (428) spi_flash: detected chip: generic[0m
+[0;32mI (432) spi_flash: flash io: dio[0m
+[0;33mW (436) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (449) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (460) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (467) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (474) coexist: coex firmware version: 4482466[0m
+[0;32mI (479) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (484) main_task: Started on CPU0[0m
+[0;32mI (484) main_task: Calling app_main()[0m
+[0;32mI (494) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (504) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (514) wifi:wifi driver task: 4082ead0, prio:23, stack:6656, core=0[0m
+[0;32mI (514) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (514) wifi:wifi certification version: v7.0[0m
+[0;32mI (514) wifi:config NVS flash: enabled[0m
+[0;32mI (514) wifi:config nano formating: disabled[0m
+[0;32mI (524) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (524) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (534) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (534) wifi:Init management short buffer num: 32[0m
+[0;32mI (544) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (544) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (544) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (554) wifi:Init static rx buffer num: 10[0m
+[0;32mI (554) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (564) wifi_init: rx ba win: 6[0m
+[0;32mI (564) wifi_init: accept mbox: 6[0m
+[0;32mI (574) wifi_init: tcpip mbox: 32[0m
+[0;32mI (574) wifi_init: udp mbox: 6[0m
+[0;32mI (574) wifi_init: tcp mbox: 6[0m
+[0;32mI (584) wifi_init: tcp tx win: 5760[0m
+[0;32mI (584) wifi_init: tcp rx win: 5760[0m
+[0;32mI (584) wifi_init: tcp mss: 1440[0m
+[0;32mI (594) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (594) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (604) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (614) phy_init: phy_version 310,dde1ba9,Jun  4 2024,16:38:11[0m
+[0;33mW (704) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (704) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (704) wifi:(agc)0x600a7128:0xd203c9ec, min.avgNF:0xce->0xd2(dB), RCalCount:0x3c, min.RRssi:0x9ec(-97.25)[0m
+[0;33mW (714) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (714) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (724) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (724) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (724) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (734) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (734) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (734) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (744) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (744) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (744) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (754) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (754) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (764) wifi:(he)attach, station, phymode:11ax[0m
+[0;32mI (764) wifi:mode : sta (58:8c:81:30:0c:e8)[0m
+[0;32mI (774) wifi:enable tsf[0m
+[0;31mE (774) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (774) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1074) mqtt_client: Error transport connect[0m
+[0;32mI (1084) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1084) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (1094) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (1094) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1104) mqtt_client: Client force reconnect requested[0m
+[0;32mI (1104) wifi:state: auth -> assoc (0x0)[0m
+[0;31mE (1114) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (1124) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1124) wifi:(trc)phytype:CBW20-LGI, snr:40, maxRate:130, highestRateIdx:1[0m
+[0;33mW (1134) wifi:(trc)band:2G, phymode:3, highestRateIdx:1, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (1144) wifi:(trc)band:2G, rate(L-MCS7, rateIdx:1), ampdu(rate:L-MCS7, schedIdx(1, stop:8)), snr:40, ampduState:wait operational[0m
+[0;32mI (1154) wifi:ifidx:0, rssi:-57, nf:-97, phytype(0x2, CBW20-LGI), phymode(0x3, 11bgn), max_rate:130, he:0, vht:0, ht:1[0m
+[0;32mI (1164) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;31mE (1174) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1174) mqtt_client: Error transport connect[0m
+[0;33mW (1184) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1194) mqtt_client: Client force reconnect requested[0m
+[0;32mI (1194) wifi:connected with PROJETO, aid = 1, channel 1, BW20, bssid = 64:66:b3:41:6e:3e[0m
+[0;32mI (1204) wifi:cipher(pairwise:0x3, group:0x3), pmf:0, security:WPA2-PSK, phy:11bgn, rssi:-57[0m
+[0;31mE (1214) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1214) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1224) mqtt_client: Error transport connect[0m
+[0;33mW (1224) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1234) mqtt_client: Client force reconnect requested[0m
+[0;32mI (1224) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (1244) wifi:pm start, type:1, aid:0x1, trans-BSSID:64:66:b3:41:6e:3e, BSSID[5]:0x3e, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (1254) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (1264) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (1274) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (1284) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (1304) wifi:AP's beacon interval = 204800 us, DTIM period = 3[0m
+[0;32mI (1304) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (1314) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (1324) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;31mE (1334) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;33mW (1334) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x1003e6e, TALO:0x41b36664, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;31mE (1354) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1354) mqtt_client: Error transport connect[0m
+[0;33mW (1364) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1374) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1374) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1384) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1384) mqtt_client: Error transport connect[0m
+[0;33mW (1394) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1404) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1404) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1414) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1424) mqtt_client: Error transport connect[0m
+[0;33mW (1424) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1434) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1444) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1444) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1454) mqtt_client: Error transport connect[0m
+[0;33mW (1454) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1464) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1474) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1484) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1484) mqtt_client: Error transport connect[0m
+[0;33mW (1494) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1504) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1504) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1514) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1514) mqtt_client: Error transport connect[0m
+[0;33mW (1524) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1534) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1534) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1544) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1554) mqtt_client: Error transport connect[0m
+[0;33mW (1554) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1564) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1574) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1574) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1584) mqtt_client: Error transport connect[0m
+[0;33mW (1584) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1594) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1604) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1614) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1614) mqtt_client: Error transport connect[0m
+[0;33mW (1624) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1624) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1634) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1644) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1644) mqtt_client: Error transport connect[0m
+[0;33mW (1654) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1664) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1664) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1674) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1684) mqtt_client: Error transport connect[0m
+[0;33mW (1684) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1694) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1704) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1704) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1714) mqtt_client: Error transport connect[0m
+[0;33mW (1714) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1724) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1734) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1734) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1744) mqtt_client: Error transport connect[0m
+[0;33mW (1754) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1754) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1764) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1774) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1774) mqtt_client: Error transport connect[0m
+[0;33mW (1784) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1794) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1794) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1804) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1814) mqtt_client: Error transport connect[0m
+[0;33mW (1814) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1824) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1834) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1834) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1844) mqtt_client: Error transport connect[0m
+[0;33mW (1844) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1854) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1864) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1864) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1874) mqtt_client: Error transport connect[0m
+[0;33mW (1884) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1884) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1894) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1904) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1904) mqtt_client: Error transport connect[0m
+[0;33mW (1914) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1924) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1924) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1934) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1944) mqtt_client: Error transport connect[0m
+[0;33mW (1944) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1954) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1964) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1964) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1974) mqtt_client: Error transport connect[0m
+[0;33mW (1974) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1984) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1994) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1994) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2004) mqtt_client: Error transport connect[0m
+[0;33mW (2014) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2014) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2024) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2034) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2034) mqtt_client: Error transport connect[0m
+[0;33mW (2044) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2054) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2054) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2064) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2074) mqtt_client: Error transport connect[0m
+[0;33mW (2074) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2084) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2094) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2094) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2104) mqtt_client: Error transport connect[0m
+[0;33mW (2104) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2114) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2124) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2124) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2134) mqtt_client: Error transport connect[0m
+[0;33mW (2144) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2144) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2154) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2164) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2164) mqtt_client: Error transport connect[0m
+[0;33mW (2174) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2184) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2184) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2194) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2204) mqtt_client: Error transport connect[0m
+[0;33mW (2204) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2214) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2224) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2224) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2234) mqtt_client: Error transport connect[0m
+[0;33mW (2234) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2244) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2254) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2254) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2264) mqtt_client: Error transport connect[0m
+[0;33mW (2274) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2274) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2284) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2294) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2294) mqtt_client: Error transport connect[0m
+[0;33mW (2304) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2314) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2314) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2324) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2334) mqtt_client: Error transport connect[0m
+[0;33mW (2334) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2344) mqtt_client: Client force reconnect requested[0m
+[0;32mI (2334) esp_netif_handlers: sta ip: 192.168.0.100, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2354) SENSORES_MQTT: ✅ Conectado à rede Wi-Fi[0m
+[0;32mI (2364) gpio: GPIO[8]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (2384) SENSORES_MQTT: Canal 0: carregando firmware VL53L5CX (~2-3 s)...[0m
+[0;32mI (2384) SENSORES_MQTT: ✅ Conectado ao broker MQTT[0m
+[0;32mI (4874) SENSORES_MQTT: ✅ Canal 0: VL53L5CX pronto (4×4, 2 Hz, contínuo)[0m
+[0;32mI (4884) SENSORES_MQTT: Canal 2: carregando firmware VL53L5CX (~2-3 s)...[0m
+[0;32mI (5384) SENSORES_MQTT: MQTT pronto para publicação após reconexão.[0m
+[0;32mI (7374) SENSORES_MQTT: ✅ Canal 2: VL53L5CX pronto (4×4, 2 Hz, contínuo)[0m
+[0;32mI (7394) SENSORES_MQTT: === Inicialização concluída ===[0m
+[0;32mI (7394) SENSORES_MQTT:   Mesa 3 VL53L5CX: OK[0m
+[0;32mI (7394) SENSORES_MQTT:   Mesa 4 VL53L5CX: OK[0m
+[0;32mI (7394) SENSORES_MQTT:   Altura sensor configurada: 1600 mm[0m
+[0;32mI (7404) SENSORES_MQTT:   Limiar de presença: < 1530 mm | Min zonas: 1[0m
+[0;32mI (7464) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2466 1689 1667 2434 2433 2406 mm  janela:[1200,1530][0m
+[0;32mI (7574) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (7574) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (7574) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (7574) SENSORES_MQTT: MQTT → [mesa4/lux] = 254.52[0m
+[0;32mI (7584) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (7584) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (7594) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (7594) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (7604) SENSORES_MQTT: Mesa4 → Lux: 254.52 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (7614) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (7614) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (8184) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2474 1688 1665 2439 2433 2394 mm  janela:[1200,1530][0m
+[0;32mI (8244) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2452 2429 1532 1524 1501 1515 mm  janela:[1200,1500][0m
+[0;32mI (8244) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (8244) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (8254) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (8254) SENSORES_MQTT: MQTT → [mesa4/lux] = 257.04[0m
+[0;32mI (8264) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (8274) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (8274) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (8284) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (8284) SENSORES_MQTT: Mesa4 → Lux: 257.04 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (8294) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (8304) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (8864) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2468 1682 1667 2444 2430 2414 mm  janela:[1200,1530][0m
+[0;32mI (8924) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2433 2445 1529 1524 1493 1521 mm  janela:[1200,1500][0m
+[0;32mI (8924) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (8924) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (8934) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (8934) SENSORES_MQTT: MQTT → [mesa4/lux] = 257.04[0m
+[0;32mI (8944) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (8954) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (8954) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (8964) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (8964) SENSORES_MQTT: Mesa4 → Lux: 257.04 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (8974) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (8984) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (9544) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2487 1694 1673 2427 2431 2412 mm  janela:[1200,1530][0m
+[0;32mI (9604) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2440 2459 1539 1518 1508 1456 mm  janela:[1200,1500][0m
+[0;32mI (9604) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (9604) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (9614) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (9614) SENSORES_MQTT: MQTT → [mesa4/lux] = 257.04[0m
+[0;32mI (9624) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (9634) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (9634) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (9644) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (9644) SENSORES_MQTT: Mesa4 → Lux: 257.04 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (9654) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (9664) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (10224) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2471 1684 1667 2438 2435 2402 mm  janela:[1200,1530][0m
+[0;32mI (10284) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2430 2457 1544 1517 1500 1529 mm  janela:[1200,1500][0m
+[0;32mI (10284) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (10284) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (10294) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (10294) SENSORES_MQTT: MQTT → [mesa4/lux] = 255.78[0m
+[0;32mI (10304) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (10314) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (10314) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (10324) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (10324) SENSORES_MQTT: Mesa4 → Lux: 255.78 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (10334) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (10344) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (10914) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2481 1691 1668 2440 2443 2413 mm  janela:[1200,1530][0m
+[0;32mI (10974) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2437 2449 1532 1514 1510 1519 mm  janela:[1200,1500][0m
+[0;32mI (10974) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (10974) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (10984) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (10994) SENSORES_MQTT: MQTT → [mesa4/lux] = 257.04[0m
+[0;32mI (10994) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (11004) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (11004) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (11014) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (11014) SENSORES_MQTT: Mesa4 → Lux: 257.04 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (11024) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (11034) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (11604) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2480 1686 1657 2430 2421 2416 mm  janela:[1200,1530][0m
+[0;32mI (11664) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2465 2456 1536 1517 1503 1536 mm  janela:[1200,1500][0m
+[0;32mI (11664) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (11664) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (11674) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (11684) SENSORES_MQTT: MQTT → [mesa4/lux] = 259.56[0m
+[0;32mI (11684) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (11694) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (11694) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (11704) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (11704) SENSORES_MQTT: Mesa4 → Lux: 259.56 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (11714) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (11724) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (12294) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2475 1682 1653 2429 2426 2412 mm  janela:[1200,1530][0m
+[0;32mI (12354) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2438 2449 1539 1518 1502 1513 mm  janela:[1200,1500][0m
+[0;32mI (12354) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (12354) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (12364) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (12364) SENSORES_MQTT: MQTT → [mesa4/lux] = 259.56[0m
+[0;32mI (12374) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (12384) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (12384) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (12394) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (12394) SENSORES_MQTT: Mesa4 → Lux: 259.56 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (12404) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (12414) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (12984) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2485 1695 1670 2452 2430 2409 mm  janela:[1200,1530][0m
+[0;32mI (13044) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2477 2462 1547 1510 1511 1538 mm  janela:[1200,1500][0m
+[0;32mI (13044) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (13054) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (13054) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (13054) SENSORES_MQTT: MQTT → [mesa4/lux] = 259.56[0m
+[0;32mI (13064) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (13074) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (13074) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (13084) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (13084) SENSORES_MQTT: Mesa4 → Lux: 259.56 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (13094) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (13104) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (13674) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2460 1701 1666 2445 2443 2411 mm  janela:[1200,1530][0m
+[0;32mI (13734) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2448 2441 1528 1519 1503 1485 mm  janela:[1200,1500][0m
+[0;32mI (13734) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (13734) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (13744) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (13744) SENSORES_MQTT: MQTT → [mesa4/lux] = 259.56[0m
+[0;32mI (13754) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (13764) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (13764) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (13774) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (13774) SENSORES_MQTT: Mesa4 → Lux: 259.56 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (13784) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (13794) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (14364) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2456 1698 1669 2451 2422 2427 mm  janela:[1200,1530][0m
+[0;32mI (14424) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2442 2452 1543 1525 1487 1496 mm  janela:[1200,1500][0m
+[0;32mI (14424) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (14424) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (14434) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (14444) SENSORES_MQTT: MQTT → [mesa4/lux] = 259.56[0m
+[0;32mI (14444) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (14454) SENSORES_MQTT: MQTT → [mesa4/zonas] = 2[0m
+[0;32mI (14454) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (14464) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (14464) SENSORES_MQTT: Mesa4 → Lux: 259.56 lx | Pessoa: 1 (2 zonas)[0m
+[0;32mI (14474) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (14484) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (15054) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2468 1688 1654 2425 2444 2417 mm  janela:[1200,1530][0m
+[0;32mI (15114) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2436 2435 1539 1512 1499 2350 mm  janela:[1200,1500][0m
+[0;32mI (15114) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (15114) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (15124) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (15124) SENSORES_MQTT: MQTT → [mesa4/lux] = 259.56[0m
+[0;32mI (15134) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (15144) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (15144) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (15154) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (15154) SENSORES_MQTT: Mesa4 → Lux: 259.56 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (15164) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (15174) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (15744) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2485 1686 1662 2439 2437 2414 mm  janela:[1200,1530][0m
+[0;32mI (15804) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2466 2452 1532 1503 1491 2319 mm  janela:[1200,1500][0m
+[0;32mI (15804) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (15804) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (15814) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (15814) SENSORES_MQTT: MQTT → [mesa4/lux] = 260.82[0m
+[0;32mI (15824) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (15834) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (15834) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (15844) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (15844) SENSORES_MQTT: Mesa4 → Lux: 260.82 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (15854) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (15864) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (16434) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2464 1682 1659 2436 2439 2416 mm  janela:[1200,1530][0m
+[0;32mI (16494) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2426 2430 1536 1513 1497 2321 mm  janela:[1200,1500][0m
+[0;32mI (16494) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (16494) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (16504) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (16514) SENSORES_MQTT: MQTT → [mesa4/lux] = 259.56[0m
+[0;32mI (16514) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (16524) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (16524) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (16534) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (16534) SENSORES_MQTT: Mesa4 → Lux: 259.56 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (16544) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (16554) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (17124) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2474 1676 1655 2439 2445 2408 mm  janela:[1200,1530][0m
+[0;32mI (17184) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2453 2449 1528 1499 1498 2345 mm  janela:[1200,1500][0m
+[0;32mI (17184) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (17184) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (17194) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (17204) SENSORES_MQTT: MQTT → [mesa4/lux] = 259.56[0m
+[0;32mI (17204) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (17214) SENSORES_MQTT: MQTT → [mesa4/zonas] = 2[0m
+[0;32mI (17214) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (17224) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (17224) SENSORES_MQTT: Mesa4 → Lux: 259.56 lx | Pessoa: 1 (2 zonas)[0m
+[0;32mI (17234) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (17244) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (17814) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2471 1688 1660 2449 2421 2400 mm  janela:[1200,1530][0m
+[0;32mI (17874) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2441 2450 1537 1512 1493 2296 mm  janela:[1200,1500][0m
+[0;32mI (17874) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (17874) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (17884) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (17894) SENSORES_MQTT: MQTT → [mesa4/lux] = 259.56[0m
+[0;32mI (17894) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (17904) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (17904) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (17914) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (17914) SENSORES_MQTT: Mesa4 → Lux: 259.56 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (17924) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (17934) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (18504) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2477 1691 1677 2441 2433 2418 mm  janela:[1200,1530][0m
+[0;32mI (18564) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2462 2452 1535 1514 1500 2291 mm  janela:[1200,1500][0m
+[0;32mI (18564) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (18564) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (18574) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (18584) SENSORES_MQTT: MQTT → [mesa4/lux] = 260.82[0m
+[0;32mI (18584) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (18594) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (18594) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (18604) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (18604) SENSORES_MQTT: Mesa4 → Lux: 260.82 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (18614) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (18624) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (19194) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2490 1693 1666 2451 2451 2415 mm  janela:[1200,1530][0m
+[0;32mI (19254) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2474 2436 1546 1505 1491 2315 mm  janela:[1200,1500][0m
+[0;32mI (19254) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (19254) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (19264) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (19274) SENSORES_MQTT: MQTT → [mesa4/lux] = 260.82[0m
+[0;32mI (19274) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (19284) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (19284) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (19294) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (19294) SENSORES_MQTT: Mesa4 → Lux: 260.82 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (19304) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (19314) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (19884) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2456 1680 1665 2436 2444 2401 mm  janela:[1200,1530][0m
+[0;32mI (19944) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2468 2443 1532 1513 1486 2381 mm  janela:[1200,1500][0m
+[0;32mI (19944) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (19944) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (19954) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (19964) SENSORES_MQTT: MQTT → [mesa4/lux] = 260.82[0m
+[0;32mI (19964) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (19974) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (19974) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (19984) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (19984) SENSORES_MQTT: Mesa4 → Lux: 260.82 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (19994) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (20004) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (20574) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2482 1691 1666 2441 2445 2408 mm  janela:[1200,1530][0m
+[0;32mI (20634) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2436 2446 1527 1522 1510 2290 mm  janela:[1200,1500][0m
+[0;32mI (20634) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (20634) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (20644) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (20654) SENSORES_MQTT: MQTT → [mesa4/lux] = 262.08[0m
+[0;32mI (20654) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (20664) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (20664) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (20674) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (20684) SENSORES_MQTT: Mesa4 → Lux: 262.08 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (20684) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (20694) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (21264) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2477 1686 1654 2449 2432 2414 mm  janela:[1200,1530][0m
+[0;32mI (21324) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2439 2429 1536 1508 1502 2357 mm  janela:[1200,1500][0m
+[0;32mI (21324) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (21324) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (21334) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (21344) SENSORES_MQTT: MQTT → [mesa4/lux] = 260.82[0m
+[0;32mI (21344) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (21354) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (21354) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (21364) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (21364) SENSORES_MQTT: Mesa4 → Lux: 260.82 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (21374) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (21384) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (21954) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2465 1699 1672 2432 2423 2411 mm  janela:[1200,1530][0m
+[0;32mI (22014) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2456 2457 1539 1512 1501 2338 mm  janela:[1200,1500][0m
+[0;32mI (22014) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (22014) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (22024) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (22024) SENSORES_MQTT: MQTT → [mesa4/lux] = 260.82[0m
+[0;32mI (22034) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (22044) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (22044) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (22054) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (22054) SENSORES_MQTT: Mesa4 → Lux: 260.82 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (22064) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (22074) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (22644) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2484 1684 1672 2429 2450 2394 mm  janela:[1200,1530][0m
+[0;32mI (22704) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2433 2466 1532 1515 1505 2344 mm  janela:[1200,1500][0m
+[0;32mI (22704) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (22704) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (22714) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (22714) SENSORES_MQTT: MQTT → [mesa4/lux] = 260.82[0m
+[0;32mI (22724) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (22734) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (22734) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (22744) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (22754) SENSORES_MQTT: Mesa4 → Lux: 260.82 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (22754) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (22764) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (23334) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2453 1683 1664 2446 2446 2404 mm  janela:[1200,1530][0m
+[0;32mI (23394) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2446 2445 1534 1519 1505 2330 mm  janela:[1200,1500][0m
+[0;32mI (23394) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (23394) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (23404) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (23404) SENSORES_MQTT: MQTT → [mesa4/lux] = 260.82[0m
+[0;32mI (23414) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (23424) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (23424) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (23434) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (23434) SENSORES_MQTT: Mesa4 → Lux: 260.82 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (23444) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (23454) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (24024) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2445 1690 1665 2438 2437 2408 mm  janela:[1200,1530][0m
+[0;32mI (24084) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2432 2452 1546 1506 1494 2368 mm  janela:[1200,1500][0m
+[0;32mI (24084) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (24084) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (24094) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (24094) SENSORES_MQTT: MQTT → [mesa4/lux] = 259.56[0m
+[0;32mI (24104) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (24114) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (24114) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (24124) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (24124) SENSORES_MQTT: Mesa4 → Lux: 259.56 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (24134) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (24144) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (24714) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2475 1687 1668 2423 2434 2413 mm  janela:[1200,1530][0m
+[0;32mI (24774) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2452 2445 1534 1502 1508 2431 mm  janela:[1200,1500][0m
+[0;32mI (24774) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (24774) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (24784) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (24794) SENSORES_MQTT: MQTT → [mesa4/lux] = 259.56[0m
+[0;32mI (24794) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (24804) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (24804) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (24814) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (24814) SENSORES_MQTT: Mesa4 → Lux: 259.56 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (24824) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (24834) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (25404) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2477 1681 1663 2417 2440 2410 mm  janela:[1200,1530][0m
+[0;32mI (25464) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2434 2436 1533 1509 1495 2359 mm  janela:[1200,1500][0m
+[0;32mI (25464) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (25474) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (25474) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (25484) SENSORES_MQTT: MQTT → [mesa4/lux] = 260.82[0m
+[0;32mI (25484) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (25494) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (25494) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (25504) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (25504) SENSORES_MQTT: Mesa4 → Lux: 260.82 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (25514) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (25524) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (26094) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2468 1689 1669 2439 2426 2417 mm  janela:[1200,1530][0m
+[0;32mI (26154) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2458 2432 1536 1504 1492 1487 mm  janela:[1200,1500][0m
+[0;32mI (26154) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (26154) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (26164) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (26164) SENSORES_MQTT: MQTT → [mesa4/lux] = 260.82[0m
+[0;32mI (26174) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (26184) SENSORES_MQTT: MQTT → [mesa4/zonas] = 2[0m
+[0;32mI (26184) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (26194) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (26194) SENSORES_MQTT: Mesa4 → Lux: 260.82 lx | Pessoa: 1 (2 zonas)[0m
+[0;32mI (26214) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (26214) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (26784) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2475 1695 1669 2439 2431 2427 mm  janela:[1200,1530][0m
+[0;32mI (26844) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2445 2432 1527 1512 1498 1889 mm  janela:[1200,1500][0m
+[0;32mI (26844) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (26854) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (26854) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (26864) SENSORES_MQTT: MQTT → [mesa4/lux] = 262.08[0m
+[0;32mI (26864) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (26874) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (26874) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (26884) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (26884) SENSORES_MQTT: Mesa4 → Lux: 262.08 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (26894) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (26904) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (27474) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2459 1692 1658 2443 2432 2426 mm  janela:[1200,1530][0m
+[0;32mI (27534) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2438 2425 1533 1521 1508 2398 mm  janela:[1200,1500][0m
+[0;32mI (27534) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (27534) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (27544) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (27554) SENSORES_MQTT: MQTT → [mesa4/lux] = 262.08[0m
+[0;32mI (27554) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (27564) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (27564) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (27574) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (27574) SENSORES_MQTT: Mesa4 → Lux: 262.08 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (27584) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (27594) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (28164) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2489 1693 1666 2432 2452 2427 mm  janela:[1200,1530][0m
+[0;32mI (28224) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2465 2450 1542 1519 1506 2395 mm  janela:[1200,1500][0m
+[0;32mI (28224) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (28224) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (28234) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (28234) SENSORES_MQTT: MQTT → [mesa4/lux] = 263.34[0m
+[0;32mI (28244) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (28254) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (28254) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (28264) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (28264) SENSORES_MQTT: Mesa4 → Lux: 263.34 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (28274) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (28284) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (28854) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2479 1686 1672 2442 2438 2449 mm  janela:[1200,1530][0m
+[0;32mI (28914) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2430 2458 1541 1520 1499 2413 mm  janela:[1200,1500][0m
+[0;32mI (28914) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (28914) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (28924) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (28924) SENSORES_MQTT: MQTT → [mesa4/lux] = 263.34[0m
+[0;32mI (28934) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (28944) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (28944) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (28954) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (28964) SENSORES_MQTT: Mesa4 → Lux: 263.34 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (28964) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (28974) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (29544) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2472 1682 1674 2427 2423 2441 mm  janela:[1200,1530][0m
+[0;32mI (29604) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2443 2434 1532 1506 1492 2435 mm  janela:[1200,1500][0m
+[0;32mI (29604) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (29604) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (29614) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (29614) SENSORES_MQTT: MQTT → [mesa4/lux] = 263.34[0m
+[0;32mI (29624) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (29634) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (29634) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (29644) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (29644) SENSORES_MQTT: Mesa4 → Lux: 263.34 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (29654) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (29664) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (30234) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2465 1681 1660 2353 2380 2437 mm  janela:[1200,1530][0m
+[0;32mI (30294) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2445 2433 1534 1519 1490 2419 mm  janela:[1200,1500][0m
+[0;32mI (30294) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (30294) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (30304) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (30314) SENSORES_MQTT: MQTT → [mesa4/lux] = 263.34[0m
+[0;32mI (30314) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (30324) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (30324) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (30334) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (30334) SENSORES_MQTT: Mesa4 → Lux: 263.34 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (30344) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (30354) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (30924) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2464 1681 1666 2448 2439 2414 mm  janela:[1200,1530][0m
+[0;32mI (30984) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2461 2449 1528 1513 1487 2404 mm  janela:[1200,1500][0m
+[0;32mI (30984) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (30984) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (30994) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (31004) SENSORES_MQTT: MQTT → [mesa4/lux] = 263.34[0m
+[0;32mI (31004) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (31014) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (31014) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (31024) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (31024) SENSORES_MQTT: Mesa4 → Lux: 263.34 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (31034) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (31044) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (31614) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2490 1690 1665 2437 2389 2425 mm  janela:[1200,1530][0m
+[0;32mI (31674) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2442 2448 1539 1521 1505 2424 mm  janela:[1200,1500][0m
+[0;32mI (31674) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (31674) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (31684) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (31694) SENSORES_MQTT: MQTT → [mesa4/lux] = 263.34[0m
+[0;32mI (31694) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (31704) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (31704) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (31714) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (31714) SENSORES_MQTT: Mesa4 → Lux: 263.34 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (31724) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (31734) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (32304) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2481 1686 1651 2394 2392 2429 mm  janela:[1200,1530][0m
+[0;32mI (32364) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2434 2446 1540 1528 1501 2410 mm  janela:[1200,1500][0m
+[0;32mI (32364) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (32374) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (32374) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (32384) SENSORES_MQTT: MQTT → [mesa4/lux] = 263.34[0m
+[0;32mI (32384) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (32394) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (32394) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (32404) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (32404) SENSORES_MQTT: Mesa4 → Lux: 263.34 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (32414) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (32424) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (32994) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2477 1685 1674 2424 2396 2433 mm  janela:[1200,1530][0m
+[0;32mI (33054) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2433 2435 1530 1525 1499 2411 mm  janela:[1200,1500][0m
+[0;32mI (33054) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (33054) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (33064) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (33064) SENSORES_MQTT: MQTT → [mesa4/lux] = 263.34[0m
+[0;32mI (33074) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (33084) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (33084) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (33094) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (33094) SENSORES_MQTT: Mesa4 → Lux: 263.34 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (33104) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (33114) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (33684) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2475 1678 1669 2392 2423 2433 mm  janela:[1200,1530][0m
+[0;32mI (33744) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2480 2454 1531 1519 1494 2425 mm  janela:[1200,1500][0m
+[0;32mI (33744) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (33744) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (33754) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (33764) SENSORES_MQTT: MQTT → [mesa4/lux] = 264.60[0m
+[0;32mI (33764) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (33774) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (33774) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (33784) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (33784) SENSORES_MQTT: Mesa4 → Lux: 264.60 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (33794) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (33804) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (34374) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2471 1694 1672 2419 2422 2421 mm  janela:[1200,1530][0m
+[0;32mI (34434) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2459 2439 1526 1521 1504 2417 mm  janela:[1200,1500][0m
+[0;32mI (34434) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (34434) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (34444) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (34444) SENSORES_MQTT: MQTT → [mesa4/lux] = 264.60[0m
+[0;32mI (34454) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (34464) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (34464) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (34474) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (34484) SENSORES_MQTT: Mesa4 → Lux: 264.60 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (34484) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (34494) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (35064) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2478 1682 1642 2433 2345 2417 mm  janela:[1200,1530][0m
+[0;32mI (35124) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2438 2448 1538 1513 1508 2405 mm  janela:[1200,1500][0m
+[0;32mI (35124) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (35124) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (35134) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (35144) SENSORES_MQTT: MQTT → [mesa4/lux] = 264.60[0m
+[0;32mI (35144) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (35154) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (35154) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (35164) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (35164) SENSORES_MQTT: Mesa4 → Lux: 264.60 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (35174) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (35184) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (35754) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2465 1680 1610 1586 1521 2440 mm  janela:[1200,1530][0m
+[0;32mI (35814) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2461 2449 1532 1514 1497 2422 mm  janela:[1200,1500][0m
+[0;32mI (35814) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (35814) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 1[0m
+[0;32mI (35824) SENSORES_MQTT: MQTT → [mesa3/zonas] = 1[0m
+[0;32mI (35824) SENSORES_MQTT: MQTT → [mesa4/lux] = 263.34[0m
+[0;32mI (35834) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (35844) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (35844) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (35854) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (35854) SENSORES_MQTT: Mesa4 → Lux: 263.34 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (35864) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (35874) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (36444) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2494 1668 1635 1458 1096 2439 mm  janela:[1200,1530][0m
+[0;32mI (36504) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2439 2447 1532 1515 1502 2404 mm  janela:[1200,1500][0m
+[0;32mI (36504) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (36504) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 1[0m
+[0;32mI (36514) SENSORES_MQTT: MQTT → [mesa3/zonas] = 1[0m
+[0;32mI (36514) SENSORES_MQTT: MQTT → [mesa4/lux] = 263.34[0m
+[0;32mI (36524) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (36534) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (36534) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (36544) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (36544) SENSORES_MQTT: Mesa4 → Lux: 263.34 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (36554) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (36564) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (37134) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2482 1680  908  966 1055 2431 mm  janela:[1200,1530][0m
+[0;32mI (37194) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2447 2442 1538 1515 1494 2409 mm  janela:[1200,1500][0m
+[0;32mI (37194) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (37194) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (37204) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (37214) SENSORES_MQTT: MQTT → [mesa4/lux] = 415.80[0m
+[0;32mI (37214) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (37224) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (37224) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (37234) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (37234) SENSORES_MQTT: Mesa4 → Lux: 415.80 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (37244) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (37254) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (37824) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2466 1679  923 1028 1060 2449 mm  janela:[1200,1530][0m
+[0;32mI (37884) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2457 2432 1534 1522 1496 2399 mm  janela:[1200,1500][0m
+[0;32mI (37884) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (37884) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (37894) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (37894) SENSORES_MQTT: MQTT → [mesa4/lux] = 594.72[0m
+[0;32mI (37904) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (37914) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (37914) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (37924) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (37924) SENSORES_MQTT: Mesa4 → Lux: 594.72 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (37934) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (37944) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (38514) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2483  902  919 1041 1062 2441 mm  janela:[1200,1530][0m
+[0;32mI (38574) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2458 2434 1529 1521 1514 2440 mm  janela:[1200,1500][0m
+[0;32mI (38574) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (38574) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (38584) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (38584) SENSORES_MQTT: MQTT → [mesa4/lux] = 608.58[0m
+[0;32mI (38594) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (38604) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (38604) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (38614) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (38614) SENSORES_MQTT: Mesa4 → Lux: 608.58 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (38624) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (38634) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (39204) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2449  914  944 1058 1059 2445 mm  janela:[1200,1530][0m
+[0;32mI (39264) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2444 2453 1524 1504 1509 2416 mm  janela:[1200,1500][0m
+[0;32mI (39264) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (39264) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (39274) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (39274) SENSORES_MQTT: MQTT → [mesa4/lux] = 609.84[0m
+[0;32mI (39284) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (39294) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (39294) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (39304) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (39304) SENSORES_MQTT: Mesa4 → Lux: 609.84 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (39314) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (39324) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (39894) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2484  914  938 1051 1058 2437 mm  janela:[1200,1530][0m
+[0;32mI (39954) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2441 2442 1538 1526 1502 2405 mm  janela:[1200,1500][0m
+[0;32mI (39954) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (39954) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (39964) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (39964) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (39974) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (39984) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (39984) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (39994) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (39994) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (40004) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (40014) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (40584) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2475  921  953 1066 1053 2438 mm  janela:[1200,1530][0m
+[0;32mI (40644) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2447 2457 1533 1508 1487 2432 mm  janela:[1200,1500][0m
+[0;32mI (40644) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (40644) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (40654) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (40664) SENSORES_MQTT: MQTT → [mesa4/lux] = 612.36[0m
+[0;32mI (40664) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (40674) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (40674) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (40684) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (40684) SENSORES_MQTT: Mesa4 → Lux: 612.36 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (40694) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (40704) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (41274) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2481  917  968 1054 1044 2438 mm  janela:[1200,1530][0m
+[0;32mI (41334) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2456 2443 1533 1510 1500 2416 mm  janela:[1200,1500][0m
+[0;32mI (41334) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (41334) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (41344) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (41344) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (41354) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (41364) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (41364) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (41374) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (41374) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (41384) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (41394) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (41964) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2474  933  952 1049 1063 2431 mm  janela:[1200,1530][0m
+[0;32mI (42024) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2442 2435 1528 1524 1493 2417 mm  janela:[1200,1500][0m
+[0;32mI (42024) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (42034) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (42034) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (42034) SENSORES_MQTT: MQTT → [mesa4/lux] = 609.84[0m
+[0;32mI (42044) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (42054) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (42054) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (42064) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (42064) SENSORES_MQTT: Mesa4 → Lux: 609.84 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (42074) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (42084) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (42654) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2489  939  947 1048 1062 2433 mm  janela:[1200,1530][0m
+[0;32mI (42714) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2429 2453 1545 1520 1488 2412 mm  janela:[1200,1500][0m
+[0;32mI (42714) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (42714) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (42724) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (42724) SENSORES_MQTT: MQTT → [mesa4/lux] = 612.36[0m
+[0;32mI (42734) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (42744) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (42744) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (42754) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (42754) SENSORES_MQTT: Mesa4 → Lux: 612.36 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (42764) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (42774) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (43404) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2456  921  943 1052 1049 2433 mm  janela:[1200,1530][0m
+[0;32mI (43464) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2466 2442 1536 1517 1492 2406 mm  janela:[1200,1500][0m
+[0;32mI (43464) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (43464) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (43474) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (43474) SENSORES_MQTT: MQTT → [mesa4/lux] = 612.36[0m
+[0;32mI (43484) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (43494) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (43494) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (43504) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (43504) SENSORES_MQTT: Mesa4 → Lux: 612.36 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (43514) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (43524) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (44094) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2471  919  952 1053 1050 2437 mm  janela:[1200,1530][0m
+[0;32mI (44154) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2438 2452 1534 1505 1501 2422 mm  janela:[1200,1500][0m
+[0;32mI (44154) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (44154) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (44164) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (44164) SENSORES_MQTT: MQTT → [mesa4/lux] = 612.36[0m
+[0;32mI (44174) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (44184) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (44184) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (44194) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (44194) SENSORES_MQTT: Mesa4 → Lux: 612.36 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (44204) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (44214) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (44784) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 1615  916  944 1054 1044 2440 mm  janela:[1200,1530][0m
+[0;32mI (44844) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2422 2439 1525 1512 1499 2422 mm  janela:[1200,1500][0m
+[0;32mI (44844) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (44844) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (44854) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (44854) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (44864) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (44874) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (44874) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (44884) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (44884) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (44894) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (44904) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (45474) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2484  916  949 1061 1053 2435 mm  janela:[1200,1530][0m
+[0;32mI (45534) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2416 2442 1538 1517 1509 2426 mm  janela:[1200,1500][0m
+[0;32mI (45534) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (45534) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (45544) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (45544) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (45554) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (45564) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (45564) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (45574) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (45574) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (45584) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (45594) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (46164) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2476  921  967 1056 1063 2436 mm  janela:[1200,1530][0m
+[0;32mI (46224) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2437 2450 1527 1515 1493 2408 mm  janela:[1200,1500][0m
+[0;32mI (46224) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (46224) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (46234) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (46244) SENSORES_MQTT: MQTT → [mesa4/lux] = 613.62[0m
+[0;32mI (46244) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (46254) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (46254) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (46264) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (46264) SENSORES_MQTT: Mesa4 → Lux: 613.62 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (46274) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (46284) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (46854) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2480 1681 1605 1087 1086 2432 mm  janela:[1200,1530][0m
+[0;32mI (46914) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2464 2435 1519 1511 1498 2423 mm  janela:[1200,1500][0m
+[0;32mI (46914) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (46914) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (46924) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (46934) SENSORES_MQTT: MQTT → [mesa4/lux] = 612.36[0m
+[0;32mI (46934) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (46944) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (46944) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (46954) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (46954) SENSORES_MQTT: Mesa4 → Lux: 612.36 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (46964) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (46974) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (47544) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2460 1693 1650 1076 1080 2437 mm  janela:[1200,1530][0m
+[0;32mI (47604) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2437 2447 1531 1511 1501 2427 mm  janela:[1200,1500][0m
+[0;32mI (47604) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (47604) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (47614) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (47624) SENSORES_MQTT: MQTT → [mesa4/lux] = 612.36[0m
+[0;32mI (47624) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (47634) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (47634) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (47644) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (47644) SENSORES_MQTT: Mesa4 → Lux: 612.36 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (47654) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (47664) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (48234) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2470 1693 1649 1584 1081 2424 mm  janela:[1200,1530][0m
+[0;32mI (48294) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2462 2446 1534 1527 1502 2427 mm  janela:[1200,1500][0m
+[0;32mI (48294) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (48294) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (48304) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (48314) SENSORES_MQTT: MQTT → [mesa4/lux] = 613.62[0m
+[0;32mI (48314) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (48324) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (48324) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (48334) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (48334) SENSORES_MQTT: Mesa4 → Lux: 613.62 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (48344) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (48354) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (48924) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2470 1691 1651 1579 1513 2438 mm  janela:[1200,1530][0m
+[0;32mI (48984) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2449 2415 1527 1512 1492 2412 mm  janela:[1200,1500][0m
+[0;32mI (48984) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (48984) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 1[0m
+[0;32mI (48994) SENSORES_MQTT: MQTT → [mesa3/zonas] = 1[0m
+[0;32mI (48994) SENSORES_MQTT: MQTT → [mesa4/lux] = 614.88[0m
+[0;32mI (49004) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (49014) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (49014) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (49024) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (49024) SENSORES_MQTT: Mesa4 → Lux: 614.88 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (49034) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (49044) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (49614) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2483 1691 1666 1597 1529 2420 mm  janela:[1200,1530][0m
+[0;32mI (49674) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2461 2435 1531 1517 1495 2420 mm  janela:[1200,1500][0m
+[0;32mI (49674) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (49674) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 1[0m
+[0;32mI (49684) SENSORES_MQTT: MQTT → [mesa3/zonas] = 1[0m
+[0;32mI (49684) SENSORES_MQTT: MQTT → [mesa4/lux] = 614.88[0m
+[0;32mI (49694) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (49704) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (49704) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (49714) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (49714) SENSORES_MQTT: Mesa4 → Lux: 614.88 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (49724) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (49734) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (50304) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2476 1679 1665 1602 1236 1094 mm  janela:[1200,1530][0m
+[0;32mI (50364) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2449 2448 1522 1530 1497 2409 mm  janela:[1200,1500][0m
+[0;32mI (50364) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (50364) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 1[0m
+[0;32mI (50374) SENSORES_MQTT: MQTT → [mesa3/zonas] = 1[0m
+[0;32mI (50384) SENSORES_MQTT: MQTT → [mesa4/lux] = 614.88[0m
+[0;32mI (50384) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (50394) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (50394) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (50404) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (50414) SENSORES_MQTT: Mesa4 → Lux: 614.88 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (50414) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (50424) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (50994) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2475 1677 1673 2418 2443 2429 mm  janela:[1200,1530][0m
+[0;32mI (51054) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2450 2449 1538 1520 1505 2455 mm  janela:[1200,1500][0m
+[0;32mI (51054) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (51054) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (51064) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (51074) SENSORES_MQTT: MQTT → [mesa4/lux] = 616.14[0m
+[0;32mI (51074) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (51084) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (51084) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (51094) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (51094) SENSORES_MQTT: Mesa4 → Lux: 616.14 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (51104) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (51114) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (51684) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2455 1695 1663 2447 2442 2426 mm  janela:[1200,1530][0m
+[0;32mI (51744) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2436 2453 1531 1499 1486 2409 mm  janela:[1200,1500][0m
+[0;32mI (51744) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (51744) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (51754) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (51754) SENSORES_MQTT: MQTT → [mesa4/lux] = 613.62[0m
+[0;32mI (51764) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (51774) SENSORES_MQTT: MQTT → [mesa4/zonas] = 2[0m
+[0;32mI (51774) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (51784) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (51784) SENSORES_MQTT: Mesa4 → Lux: 613.62 lx | Pessoa: 1 (2 zonas)[0m
+[0;32mI (51794) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (51804) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (52374) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 1637 1687 1671 2421 2431 2432 mm  janela:[1200,1530][0m
+[0;32mI (52434) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2412 2455 1535 1506 1495 2414 mm  janela:[1200,1500][0m
+[0;32mI (52434) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (52434) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (52444) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (52454) SENSORES_MQTT: MQTT → [mesa4/lux] = 612.36[0m
+[0;32mI (52454) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (52464) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (52464) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (52474) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (52474) SENSORES_MQTT: Mesa4 → Lux: 612.36 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (52484) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (52494) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (53064) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2473 1677 1663 2446 2444 2438 mm  janela:[1200,1530][0m
+[0;32mI (53124) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2430 2439 1529 1515 1495 2375 mm  janela:[1200,1500][0m
+[0;32mI (53124) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (53124) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (53134) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (53144) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (53144) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (53154) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (53154) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (53164) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (53164) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (53174) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (53184) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (53754) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2475 1686 1673 2454 2426 2434 mm  janela:[1200,1530][0m
+[0;32mI (53814) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2434 2443 1537 1515 1501 2363 mm  janela:[1200,1500][0m
+[0;32mI (53814) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (53814) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (53824) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (53834) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (53834) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (53844) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (53844) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (53854) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (53854) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (53864) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (53874) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (54444) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2468 1690 1668 2435 2440 2430 mm  janela:[1200,1530][0m
+[0;32mI (54504) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2443 2438 1531 1503 1508 2357 mm  janela:[1200,1500][0m
+[0;32mI (54504) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (54504) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (54514) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (54524) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (54524) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (54534) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (54534) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (54544) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (54554) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (54554) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (54564) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (55134) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2462 1691 1667 2439 2427 2434 mm  janela:[1200,1530][0m
+[0;32mI (55194) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2445 2440 1536 1508 1493 2328 mm  janela:[1200,1500][0m
+[0;32mI (55194) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (55194) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (55204) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (55214) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (55214) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (55224) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (55224) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (55234) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (55234) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (55244) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (55254) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (55824) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2458 1680 1660 2433 2422 2443 mm  janela:[1200,1530][0m
+[0;32mI (55884) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2439 2434 1540 1516 1498 1488 mm  janela:[1200,1500][0m
+[0;32mI (55884) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (55884) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (55894) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (55904) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (55904) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (55914) SENSORES_MQTT: MQTT → [mesa4/zonas] = 2[0m
+[0;32mI (55914) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (55924) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (55924) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 1 (2 zonas)[0m
+[0;32mI (55934) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (55944) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (56514) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2476 1690 1664 2449 2443 2428 mm  janela:[1200,1530][0m
+[0;32mI (56574) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2438 2410 1525 1517 1493 1470 mm  janela:[1200,1500][0m
+[0;32mI (56574) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (56574) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (56584) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (56594) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (56594) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (56604) SENSORES_MQTT: MQTT → [mesa4/zonas] = 2[0m
+[0;32mI (56604) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (56614) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (56624) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 1 (2 zonas)[0m
+[0;32mI (56624) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (56634) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (57204) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2474 1687 1664 2439 2426 2431 mm  janela:[1200,1530][0m
+[0;32mI (57264) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2431 2446 1521 1503 1500 1513 mm  janela:[1200,1500][0m
+[0;32mI (57264) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (57264) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (57274) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (57274) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (57284) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (57294) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (57294) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (57304) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (57304) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (57314) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (57324) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (57894) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2465 1684 1662 2445 2442 2435 mm  janela:[1200,1530][0m
+[0;32mI (57954) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2443 2445 1494 1501 1518 2384 mm  janela:[1200,1500][0m
+[0;32mI (57954) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (57954) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (57964) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (57964) SENSORES_MQTT: MQTT → [mesa4/lux] = 609.84[0m
+[0;32mI (57974) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (57984) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (57984) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (57994) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (57994) SENSORES_MQTT: Mesa4 → Lux: 609.84 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (58004) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (58014) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (58584) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2468 1684 1664 2435 2416 2432 mm  janela:[1200,1530][0m
+[0;32mI (58644) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2454 2448 1490 1504 1516 2343 mm  janela:[1200,1500][0m
+[0;32mI (58644) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (58654) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (58654) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (58664) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (58664) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (58674) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (58674) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (58684) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (58684) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (58694) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (58704) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (59274) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2460 1684 1657 2439 2436 2423 mm  janela:[1200,1530][0m
+[0;32mI (59334) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2476 2440 1497 1494 1516 1526 mm  janela:[1200,1500][0m
+[0;32mI (59334) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (59334) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (59344) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (59354) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (59354) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (59364) SENSORES_MQTT: MQTT → [mesa4/zonas] = 2[0m
+[0;32mI (59364) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (59374) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (59374) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 1 (2 zonas)[0m
+[0;32mI (59384) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (59394) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (59964) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2467 1673 1672 2425 2432 2423 mm  janela:[1200,1530][0m
+[0;32mI (60024) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2452 2456 1504 1513 1524 1539 mm  janela:[1200,1500][0m
+[0;32mI (60024) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (60024) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (60034) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (60034) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (60044) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (60054) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (60054) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (60064) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (60064) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (60074) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (60084) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (60654) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2467 1690 1666 2434 2446 2439 mm  janela:[1200,1530][0m
+[0;32mI (60714) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2435 2445 1499 1517 1532 1597 mm  janela:[1200,1500][0m
+[0;32mI (60714) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (60714) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (60724) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (60724) SENSORES_MQTT: MQTT → [mesa4/lux] = 611.10[0m
+[0;32mI (60734) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (60744) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (60744) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (60754) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (60754) SENSORES_MQTT: Mesa4 → Lux: 611.10 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (60764) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (60774) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (61344) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2477 1688 1667 2441 2443 2427 mm  janela:[1200,1530][0m
+[0;32mI (61404) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2445 2451 1504 1524 1518 1664 mm  janela:[1200,1500][0m
+[0;32mI (61404) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (61404) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (61414) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (61414) SENSORES_MQTT: MQTT → [mesa4/lux] = 612.36[0m
+[0;32mI (61424) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (61434) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (61434) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (61444) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (61444) SENSORES_MQTT: Mesa4 → Lux: 612.36 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (61454) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (61464) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (62034) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2468 1677 1664 2445 2447 2440 mm  janela:[1200,1530][0m
+[0;32mI (62094) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2455 2451 1508 1499 1518 2377 mm  janela:[1200,1500][0m
+[0;32mI (62094) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (62094) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (62104) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (62104) SENSORES_MQTT: MQTT → [mesa4/lux] = 612.36[0m
+[0;32mI (62114) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (62124) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (62134) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (62134) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (62134) SENSORES_MQTT: Mesa4 → Lux: 612.36 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (62144) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (62154) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (62724) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2440 1696 1672 2442 2434 2436 mm  janela:[1200,1530][0m
+[0;32mI (62784) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2437 2452 1518 1504 1514 2378 mm  janela:[1200,1500][0m
+[0;32mI (62784) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (62784) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (62794) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (62794) SENSORES_MQTT: MQTT → [mesa4/lux] = 613.62[0m
+[0;32mI (62804) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (62814) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (62814) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (62824) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (62824) SENSORES_MQTT: Mesa4 → Lux: 613.62 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (62834) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (62844) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (63414) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2491 1681 1665 2417 2420 2425 mm  janela:[1200,1530][0m
+[0;32mI (63474) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2446 2454 1519 1507 1512 2420 mm  janela:[1200,1500][0m
+[0;32mI (63474) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (63474) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (63484) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (63484) SENSORES_MQTT: MQTT → [mesa4/lux] = 616.14[0m
+[0;32mI (63494) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (63504) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (63504) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (63514) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (63524) SENSORES_MQTT: Mesa4 → Lux: 616.14 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (63524) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (63534) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (64104) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2467 1689 1669 2408 2372 2439 mm  janela:[1200,1530][0m
+[0;32mI (64164) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2397 2438 1510 1509 1520 2424 mm  janela:[1200,1500][0m
+[0;32mI (64164) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (64164) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (64174) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (64174) SENSORES_MQTT: MQTT → [mesa4/lux] = 616.14[0m
+[0;32mI (64184) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (64194) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (64194) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (64204) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (64214) SENSORES_MQTT: Mesa4 → Lux: 616.14 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (64214) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (64224) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (64794) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2477 1692 1667 2440 2404 2437 mm  janela:[1200,1530][0m
+[0;32mI (64854) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2473 2439 1493 1505 1495 2408 mm  janela:[1200,1500][0m
+[0;32mI (64854) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (64854) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (64864) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (64864) SENSORES_MQTT: MQTT → [mesa4/lux] = 614.88[0m
+[0;32mI (64874) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (64884) SENSORES_MQTT: MQTT → [mesa4/zonas] = 2[0m
+[0;32mI (64884) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (64894) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (64894) SENSORES_MQTT: Mesa4 → Lux: 614.88 lx | Pessoa: 1 (2 zonas)[0m
+[0;32mI (64904) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (64914) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (65484) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2480 1683 1667 2443 2445 2442 mm  janela:[1200,1530][0m
+[0;32mI (65544) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2481 2459 1518 1518 1514 2434 mm  janela:[1200,1500][0m
+[0;32mI (65544) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (65544) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (65554) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (65564) SENSORES_MQTT: MQTT → [mesa4/lux] = 616.14[0m
+[0;32mI (65564) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (65574) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (65574) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (65584) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (65584) SENSORES_MQTT: Mesa4 → Lux: 616.14 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (65594) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (65604) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (66174) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2483 1682 1664 2439 2442 2436 mm  janela:[1200,1530][0m
+[0;32mI (66234) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2448 2461 1499 1516 1504 2424 mm  janela:[1200,1500][0m
+[0;32mI (66234) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (66234) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (66244) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (66254) SENSORES_MQTT: MQTT → [mesa4/lux] = 614.88[0m
+[0;32mI (66254) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (66264) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (66264) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (66274) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (66274) SENSORES_MQTT: Mesa4 → Lux: 614.88 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (66284) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (66294) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (66864) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2468 1689 1669 2413 2419 2436 mm  janela:[1200,1530][0m
+[0;32mI (66924) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2440 2437 1514 1508 1506 2439 mm  janela:[1200,1500][0m
+[0;32mI (66924) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (66924) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (66934) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (66934) SENSORES_MQTT: MQTT → [mesa4/lux] = 616.14[0m
+[0;32mI (66944) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (66954) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (66954) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (66964) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (66964) SENSORES_MQTT: Mesa4 → Lux: 616.14 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (66974) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (66984) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (67554) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2472 1678 1669 2440 2417 2434 mm  janela:[1200,1530][0m
+[0;32mI (67614) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2443 2433 1508 1513 1511 2419 mm  janela:[1200,1500][0m
+[0;32mI (67614) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (67614) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (67624) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (67624) SENSORES_MQTT: MQTT → [mesa4/lux] = 616.14[0m
+[0;32mI (67634) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (67644) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (67644) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (67654) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (67654) SENSORES_MQTT: Mesa4 → Lux: 616.14 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (67664) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (67674) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (68244) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2478 1689 1666 2450 2442 2437 mm  janela:[1200,1530][0m
+[0;32mI (68304) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2444 2435 1514 1511 1509 2419 mm  janela:[1200,1500][0m
+[0;32mI (68304) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (68304) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (68314) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (68324) SENSORES_MQTT: MQTT → [mesa4/lux] = 616.14[0m
+[0;32mI (68324) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (68334) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (68334) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (68344) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (68344) SENSORES_MQTT: Mesa4 → Lux: 616.14 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (68354) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (68364) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (68934) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2474 1675 1663 2438 2420 2443 mm  janela:[1200,1530][0m
+[0;32mI (68994) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2474 2445 1495 1511 1517 2414 mm  janela:[1200,1500][0m
+[0;32mI (68994) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (68994) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (69004) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (69004) SENSORES_MQTT: MQTT → [mesa4/lux] = 616.14[0m
+[0;32mI (69014) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (69024) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (69024) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (69034) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (69034) SENSORES_MQTT: Mesa4 → Lux: 616.14 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (69044) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (69054) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (69624) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2461 1692 1667 2432 2454 2444 mm  janela:[1200,1530][0m
+[0;32mI (69684) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2448 2447 1509 1493 1509 2410 mm  janela:[1200,1500][0m
+[0;32mI (69684) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (69684) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (69694) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (69704) SENSORES_MQTT: MQTT → [mesa4/lux] = 617.40[0m
+[0;32mI (69704) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (69714) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (69714) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (69724) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (69724) SENSORES_MQTT: Mesa4 → Lux: 617.40 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (69734) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (69744) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (70314) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2469 1678 1670 2436 2436 2427 mm  janela:[1200,1530][0m
+[0;32mI (70374) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2425 2446 1505 1505 1510 2413 mm  janela:[1200,1500][0m
+[0;32mI (70374) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (70374) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (70384) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (70384) SENSORES_MQTT: MQTT → [mesa4/lux] = 616.14[0m
+[0;32mI (70394) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (70404) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (70404) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (70414) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (70414) SENSORES_MQTT: Mesa4 → Lux: 616.14 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (70424) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (70434) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (71004) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2475 1682 1657 2448 2434 2430 mm  janela:[1200,1530][0m
+[0;32mI (71064) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2453 2455 1502 1505 1500 2398 mm  janela:[1200,1500][0m
+[0;32mI (71064) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (71064) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (71074) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (71074) SENSORES_MQTT: MQTT → [mesa4/lux] = 616.14[0m
+[0;32mI (71084) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (71094) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (71094) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (71104) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (71104) SENSORES_MQTT: Mesa4 → Lux: 616.14 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (71114) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (71124) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (71694) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2485 1678 1664 2448 2428 2437 mm  janela:[1200,1530][0m
+[0;32mI (71754) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2437 2449 1517 1512 1503 2426 mm  janela:[1200,1500][0m
+[0;32mI (71754) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (71754) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (71764) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (71774) SENSORES_MQTT: MQTT → [mesa4/lux] = 617.40[0m
+[0;32mI (71774) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (71784) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (71784) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (71794) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (71794) SENSORES_MQTT: Mesa4 → Lux: 617.40 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (71804) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (71814) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (72384) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2467 1693 1659 2458 2434 2430 mm  janela:[1200,1530][0m
+[0;32mI (72444) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2449 2446 1498 1491 1514 2435 mm  janela:[1200,1500][0m
+[0;32mI (72444) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (72444) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (72454) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (72454) SENSORES_MQTT: MQTT → [mesa4/lux] = 614.88[0m
+[0;32mI (72464) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (72474) SENSORES_MQTT: MQTT → [mesa4/zonas] = 2[0m
+[0;32mI (72474) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (72484) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (72484) SENSORES_MQTT: Mesa4 → Lux: 614.88 lx | Pessoa: 1 (2 zonas)[0m
+[0;32mI (72494) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (72504) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (73074) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2468 1676 1669 2448 2434 2428 mm  janela:[1200,1530][0m
+[0;32mI (73134) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2450 2446 1493 1499 1510 2435 mm  janela:[1200,1500][0m
+[0;32mI (73134) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (73134) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (73144) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (73154) SENSORES_MQTT: MQTT → [mesa4/lux] = 616.14[0m
+[0;32mI (73154) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (73164) SENSORES_MQTT: MQTT → [mesa4/zonas] = 2[0m
+[0;32mI (73164) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (73174) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (73174) SENSORES_MQTT: Mesa4 → Lux: 616.14 lx | Pessoa: 1 (2 zonas)[0m
+[0;32mI (73184) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (73194) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (73764) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2475 1683 1670 2446 2432 2433 mm  janela:[1200,1530][0m
+[0;32mI (73824) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2474 2441 1504 1509 1518 2423 mm  janela:[1200,1500][0m
+[0;32mI (73824) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (73824) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (73834) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (73844) SENSORES_MQTT: MQTT → [mesa4/lux] = 616.14[0m
+[0;32mI (73844) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (73854) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (73854) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (73864) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (73864) SENSORES_MQTT: Mesa4 → Lux: 616.14 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (73874) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (73884) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (74454) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2471 1693 1664 2413 1619 2427 mm  janela:[1200,1530][0m
+[0;32mI (74514) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2441 2455 1514 1497 1514 2423 mm  janela:[1200,1500][0m
+[0;32mI (74514) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (74514) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (74524) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (74524) SENSORES_MQTT: MQTT → [mesa4/lux] = 613.62[0m
+[0;32mI (74534) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (74544) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (74544) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (74554) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (74554) SENSORES_MQTT: Mesa4 → Lux: 613.62 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (74564) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (74574) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (75144) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2476 1689 1193 1396 1252 1414 mm  janela:[1200,1530][0m
+[0;32mI (75204) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2457 2452 1515 1503 1517 2429 mm  janela:[1200,1500][0m
+[0;32mI (75204) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (75204) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 1[0m
+[0;32mI (75214) SENSORES_MQTT: MQTT → [mesa3/zonas] = 3[0m
+[0;32mI (75224) SENSORES_MQTT: MQTT → [mesa4/lux] = 609.84[0m
+[0;32mI (75224) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (75234) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (75234) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (75244) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 1 (3 zonas)[0m
+[0;32mI (75244) SENSORES_MQTT: Mesa4 → Lux: 609.84 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (75254) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (75264) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (75834) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2494 1680 1092 1576  864 1070 mm  janela:[1200,1530][0m
+[0;32mI (75894) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2443 2441 1506 1514 1505 2424 mm  janela:[1200,1500][0m
+[0;32mI (75894) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (75894) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (75904) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (75914) SENSORES_MQTT: MQTT → [mesa4/lux] = 609.84[0m
+[0;32mI (75914) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (75924) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (75924) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (75934) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (75934) SENSORES_MQTT: Mesa4 → Lux: 609.84 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (75944) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (75954) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (76524) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2467 1683 1080 1028  860 1036 mm  janela:[1200,1530][0m
+[0;32mI (76584) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2405 2458 1508 1507 1504 2445 mm  janela:[1200,1500][0m
+[0;32mI (76584) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (76584) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (76594) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (76594) SENSORES_MQTT: MQTT → [mesa4/lux] = 608.58[0m
+[0;32mI (76604) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (76614) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (76614) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (76624) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (76624) SENSORES_MQTT: Mesa4 → Lux: 608.58 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (76634) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (76644) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (77214) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 1627 1695 1071 1023  861 1022 mm  janela:[1200,1530][0m
+[0;32mI (77274) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2473 2460 1516 1505 1513 2427 mm  janela:[1200,1500][0m
+[0;32mI (77274) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (77274) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (77284) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (77294) SENSORES_MQTT: MQTT → [mesa4/lux] = 608.58[0m
+[0;32mI (77294) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (77304) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (77304) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (77314) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (77314) SENSORES_MQTT: Mesa4 → Lux: 608.58 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (77324) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (77334) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (77904) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2471 1692 1073 1023  857 1049 mm  janela:[1200,1530][0m
+[0;32mI (77964) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2456 2451 1510 1526 1511 2398 mm  janela:[1200,1500][0m
+[0;32mI (77964) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (77964) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (77974) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (77974) SENSORES_MQTT: MQTT → [mesa4/lux] = 609.84[0m
+[0;32mI (77984) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (77994) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (77994) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (78004) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (78004) SENSORES_MQTT: Mesa4 → Lux: 609.84 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (78014) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (78024) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (78594) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2471 1689 1076 1021  858 1032 mm  janela:[1200,1530][0m
+[0;32mI (78654) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2492 2432 1502 1487 1514 2405 mm  janela:[1200,1500][0m
+[0;32mI (78654) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (78654) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (78664) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (78664) SENSORES_MQTT: MQTT → [mesa4/lux] = 609.84[0m
+[0;32mI (78674) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (78684) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (78684) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (78694) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (78694) SENSORES_MQTT: Mesa4 → Lux: 609.84 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (78704) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (78714) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (79284) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2478 1695 1078 1016  861 1024 mm  janela:[1200,1530][0m
+[0;32mI (79344) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2459 2440 1513 1493 1520 2418 mm  janela:[1200,1500][0m
+[0;32mI (79344) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (79344) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (79354) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (79354) SENSORES_MQTT: MQTT → [mesa4/lux] = 608.58[0m
+[0;32mI (79364) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (79374) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (79374) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (79384) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (79384) SENSORES_MQTT: Mesa4 → Lux: 608.58 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (79394) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (79404) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (79974) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2471 1683 1097  937 1027 1039 mm  janela:[1200,1530][0m
+[0;32mI (80034) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2414 2448 1506 1524 1508 2443 mm  janela:[1200,1500][0m
+[0;32mI (80034) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (80034) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (80044) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (80054) SENSORES_MQTT: MQTT → [mesa4/lux] = 608.58[0m
+[0;32mI (80054) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (80064) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (80064) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (80074) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (80074) SENSORES_MQTT: Mesa4 → Lux: 608.58 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (80084) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (80094) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (80664) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2470 1689 1004  872 1035 1047 mm  janela:[1200,1530][0m
+[0;32mI (80724) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2438 2440 1505 1500 1504 2403 mm  janela:[1200,1500][0m
+[0;32mI (80724) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (80724) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (80734) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (80734) SENSORES_MQTT: MQTT → [mesa4/lux] = 609.84[0m
+[0;32mI (80744) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (80754) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (80764) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (80764) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (80764) SENSORES_MQTT: Mesa4 → Lux: 609.84 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (80774) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (80784) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (81354) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2476 1695 1014  943 1064 2439 mm  janela:[1200,1530][0m
+[0;32mI (81414) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2452 2443 1516 1511 1510 2406 mm  janela:[1200,1500][0m
+[0;32mI (81414) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (81414) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (81424) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (81434) SENSORES_MQTT: MQTT → [mesa4/lux] = 608.58[0m
+[0;32mI (81434) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (81444) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (81444) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (81454) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (81454) SENSORES_MQTT: Mesa4 → Lux: 608.58 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (81464) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (81474) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (82044) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2462 1118  933  993 1060 2434 mm  janela:[1200,1530][0m
+[0;32mI (82104) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2430 2432 1511 1502 1516 2407 mm  janela:[1200,1500][0m
+[0;32mI (82104) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (82104) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (82114) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (82124) SENSORES_MQTT: MQTT → [mesa4/lux] = 593.46[0m
+[0;32mI (82134) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (82134) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (82134) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (82144) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (82144) SENSORES_MQTT: Mesa4 → Lux: 593.46 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (82154) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (82164) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (82734) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2483 1691  943 1006 1065 2433 mm  janela:[1200,1530][0m
+[0;32mI (82794) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2444 2469 1512 1510 1520 2414 mm  janela:[1200,1500][0m
+[0;32mI (82794) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (82794) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (82804) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (82804) SENSORES_MQTT: MQTT → [mesa4/lux] = 253.26[0m
+[0;32mI (82814) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (82824) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (82824) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (82834) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (82834) SENSORES_MQTT: Mesa4 → Lux: 253.26 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (82844) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (82854) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (83424) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2482 1698  940 1015 1048 2438 mm  janela:[1200,1530][0m
+[0;32mI (83484) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2458 2444 1515 1485 1514 2396 mm  janela:[1200,1500][0m
+[0;32mI (83484) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (83484) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (83494) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (83494) SENSORES_MQTT: MQTT → [mesa4/lux] = 254.52[0m
+[0;32mI (83504) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (83514) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (83514) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (83524) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (83524) SENSORES_MQTT: Mesa4 → Lux: 254.52 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (83534) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (83544) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (84114) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2460 1695  933 1015 1055 2431 mm  janela:[1200,1530][0m
+[0;32mI (84174) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2450 2457 1511 1515 1522 2438 mm  janela:[1200,1500][0m
+[0;32mI (84174) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (84174) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (84184) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (84184) SENSORES_MQTT: MQTT → [mesa4/lux] = 254.52[0m
+[0;32mI (84194) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (84204) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (84204) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (84214) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (84214) SENSORES_MQTT: Mesa4 → Lux: 254.52 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (84224) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (84234) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (84804) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2467 1000  916 1023 1042 2426 mm  janela:[1200,1530][0m
+[0;32mI (84864) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2474 2454 1505 1516 1512 2425 mm  janela:[1200,1500][0m
+[0;32mI (84864) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (84864) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (84874) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (84884) SENSORES_MQTT: MQTT → [mesa4/lux] = 254.52[0m
+[0;32mI (84884) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (84894) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (84894) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (84904) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (84904) SENSORES_MQTT: Mesa4 → Lux: 254.52 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (84914) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (84924) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (85494) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2483  981  899 1026 1039 2434 mm  janela:[1200,1530][0m
+[0;32mI (85554) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2445 2447 1512 1519 1513 2423 mm  janela:[1200,1500][0m
+[0;32mI (85554) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (85554) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (85564) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (85564) SENSORES_MQTT: MQTT → [mesa4/lux] = 254.52[0m
+[0;32mI (85574) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (85584) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (85584) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (85594) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (85594) SENSORES_MQTT: Mesa4 → Lux: 254.52 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (85604) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (85614) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (86184) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2472 1114  877  987 1044 2434 mm  janela:[1200,1530][0m
+[0;32mI (86244) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2459 2448 1505 1509 1512 2421 mm  janela:[1200,1500][0m
+[0;32mI (86244) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (86244) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (86254) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (86264) SENSORES_MQTT: MQTT → [mesa4/lux] = 253.26[0m
+[0;32mI (86264) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (86274) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (86274) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (86284) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (86284) SENSORES_MQTT: Mesa4 → Lux: 253.26 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (86294) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (86304) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (86874) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2474 1209  902  988 1052 2426 mm  janela:[1200,1530][0m
+[0;32mI (86934) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2455 2443 1507 1517 1504 2423 mm  janela:[1200,1500][0m
+[0;32mI (86934) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (86934) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 1[0m
+[0;32mI (86944) SENSORES_MQTT: MQTT → [mesa3/zonas] = 1[0m
+[0;32mI (86944) SENSORES_MQTT: MQTT → [mesa4/lux] = 254.52[0m
+[0;32mI (86954) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (86964) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (86964) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (86974) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (86974) SENSORES_MQTT: Mesa4 → Lux: 254.52 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (86984) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (86994) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (87564) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2472 1187 1627  987 1085 2435 mm  janela:[1200,1530][0m
+[0;32mI (87624) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2445 2450 1500 1515 1508 2418 mm  janela:[1200,1500][0m
+[0;32mI (87624) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (87624) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (87634) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (87644) SENSORES_MQTT: MQTT → [mesa4/lux] = 255.78[0m
+[0;32mI (87644) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (87654) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (87654) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (87664) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (87664) SENSORES_MQTT: Mesa4 → Lux: 255.78 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (87674) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (87684) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (88254) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2483 1670 1663 1120 1502 2441 mm  janela:[1200,1530][0m
+[0;32mI (88314) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2441 2440 1515 1511 1510 2409 mm  janela:[1200,1500][0m
+[0;32mI (88314) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (88314) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 1[0m
+[0;32mI (88324) SENSORES_MQTT: MQTT → [mesa3/zonas] = 1[0m
+[0;32mI (88334) SENSORES_MQTT: MQTT → [mesa4/lux] = 257.04[0m
+[0;32mI (88334) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (88344) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (88344) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (88354) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (88354) SENSORES_MQTT: Mesa4 → Lux: 257.04 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (88364) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (88374) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (88944) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2475 1680 1670 2409 2429 2433 mm  janela:[1200,1530][0m
+[0;32mI (89004) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2446 2451 1513 1512 1518 2426 mm  janela:[1200,1500][0m
+[0;32mI (89004) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (89004) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (89014) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (89014) SENSORES_MQTT: MQTT → [mesa4/lux] = 255.78[0m
+[0;32mI (89024) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (89034) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (89034) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (89044) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (89044) SENSORES_MQTT: Mesa4 → Lux: 255.78 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (89054) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (89064) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (89634) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2475 1688 1657 2421 2420 2429 mm  janela:[1200,1530][0m
+[0;32mI (89694) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2426 2462 1520 1482 1486 2396 mm  janela:[1200,1500][0m
+[0;32mI (89694) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (89694) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (89704) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (89704) SENSORES_MQTT: MQTT → [mesa4/lux] = 254.52[0m
+[0;32mI (89714) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (89724) SENSORES_MQTT: MQTT → [mesa4/zonas] = 2[0m
+[0;32mI (89724) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (89734) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (89744) SENSORES_MQTT: Mesa4 → Lux: 254.52 lx | Pessoa: 1 (2 zonas)[0m
+[0;32mI (89744) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (89754) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (90324) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2471 1682 1657 2439 2436 2439 mm  janela:[1200,1530][0m
+[0;32mI (90384) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2440 2440 1499 1509 1499 2424 mm  janela:[1200,1500][0m
+[0;32mI (90384) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (90384) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (90394) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (90404) SENSORES_MQTT: MQTT → [mesa4/lux] = 253.26[0m
+[0;32mI (90404) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (90414) SENSORES_MQTT: MQTT → [mesa4/zonas] = 2[0m
+[0;32mI (90414) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (90424) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (90424) SENSORES_MQTT: Mesa4 → Lux: 253.26 lx | Pessoa: 1 (2 zonas)[0m
+[0;32mI (90434) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (90444) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (91014) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2452 1693 1670 2431 2443 2432 mm  janela:[1200,1530][0m
+[0;32mI (91074) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2445 2441 1515 1520 1522 2402 mm  janela:[1200,1500][0m
+[0;32mI (91074) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (91074) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (91084) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (91084) SENSORES_MQTT: MQTT → [mesa4/lux] = 252.00[0m
+[0;32mI (91094) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (91104) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (91104) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (91114) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (91114) SENSORES_MQTT: Mesa4 → Lux: 252.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (91124) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (91134) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (91704) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2465 1686 1666 2442 2431 2435 mm  janela:[1200,1530][0m
+[0;32mI (91764) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2429 2460 1512 1501 1526 2405 mm  janela:[1200,1500][0m
+[0;32mI (91764) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (91764) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (91774) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (91784) SENSORES_MQTT: MQTT → [mesa4/lux] = 252.00[0m
+[0;32mI (91784) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (91794) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (91794) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (91804) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (91804) SENSORES_MQTT: Mesa4 → Lux: 252.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (91814) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (91824) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (92394) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2483 1683 1658 2452 2426 2438 mm  janela:[1200,1530][0m
+[0;32mI (92454) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2419 2471 1505 1506 1510 2409 mm  janela:[1200,1500][0m
+[0;32mI (92454) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (92454) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (92464) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (92464) SENSORES_MQTT: MQTT → [mesa4/lux] = 252.00[0m
+[0;32mI (92474) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (92484) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (92484) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (92494) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (92494) SENSORES_MQTT: Mesa4 → Lux: 252.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (92504) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (92514) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (93084) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2483 1692 1672 2440 2438 2432 mm  janela:[1200,1530][0m
+[0;32mI (93144) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2436 2449 1498 1489 1509 1538 mm  janela:[1200,1500][0m
+[0;32mI (93144) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (93144) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (93154) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (93164) SENSORES_MQTT: MQTT → [mesa4/lux] = 250.74[0m
+[0;32mI (93164) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (93174) SENSORES_MQTT: MQTT → [mesa4/zonas] = 2[0m
+[0;32mI (93174) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (93184) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (93184) SENSORES_MQTT: Mesa4 → Lux: 250.74 lx | Pessoa: 1 (2 zonas)[0m
+[0;32mI (93194) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (93204) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (93774) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2472 1682 1670 2441 2422 2429 mm  janela:[1200,1530][0m
+[0;32mI (93834) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2432 2446 1512 1495 1532 1506 mm  janela:[1200,1500][0m
+[0;32mI (93834) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (93834) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (93844) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (93844) SENSORES_MQTT: MQTT → [mesa4/lux] = 250.74[0m
+[0;32mI (93854) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (93864) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (93864) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (93874) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (93874) SENSORES_MQTT: Mesa4 → Lux: 250.74 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (93884) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (93894) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (94464) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2479 1689 1664 2448 2432 2428 mm  janela:[1200,1530][0m
+[0;32mI (94524) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2442 2434 1516 1413 1504 1511 mm  janela:[1200,1500][0m
+[0;32mI (94524) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (94524) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (94534) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (94544) SENSORES_MQTT: MQTT → [mesa4/lux] = 252.00[0m
+[0;32mI (94544) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (94554) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (94554) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (94564) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (94564) SENSORES_MQTT: Mesa4 → Lux: 252.00 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (94574) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (94584) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (95154) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2463 1680 1665 2431 2429 2449 mm  janela:[1200,1530][0m
+[0;32mI (95214) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2460 2452 1519 1496 1509 1502 mm  janela:[1200,1500][0m
+[0;32mI (95214) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (95214) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (95224) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (95234) SENSORES_MQTT: MQTT → [mesa4/lux] = 252.00[0m
+[0;32mI (95234) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (95244) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (95244) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (95254) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (95254) SENSORES_MQTT: Mesa4 → Lux: 252.00 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (95264) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (95274) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (95844) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2469 1696 1655 2438 2428 2426 mm  janela:[1200,1530][0m
+[0;32mI (95904) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2462 2460 1509 1509 1524 1520 mm  janela:[1200,1500][0m
+[0;32mI (95904) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (95904) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (95914) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (95924) SENSORES_MQTT: MQTT → [mesa4/lux] = 252.00[0m
+[0;32mI (95924) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 0[0m
+[0;32mI (95934) SENSORES_MQTT: MQTT → [mesa4/zonas] = 0[0m
+[0;32mI (95934) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (95944) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (95944) SENSORES_MQTT: Mesa4 → Lux: 252.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (95954) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (95964) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (96534) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2487 1696 1659 2439 2417 2445 mm  janela:[1200,1530][0m
+[0;32mI (96594) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2433 2442 1511 1490 1507 1504 mm  janela:[1200,1500][0m
+[0;32mI (96594) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (96594) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (96604) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (96604) SENSORES_MQTT: MQTT → [mesa4/lux] = 250.74[0m
+[0;32mI (96614) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (96624) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (96624) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (96634) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (96634) SENSORES_MQTT: Mesa4 → Lux: 250.74 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (96644) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (96654) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (97224) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2478 1683 1664 2451 2440 2438 mm  janela:[1200,1530][0m
+[0;32mI (97284) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2469 2459 1509 1508 1497 1503 mm  janela:[1200,1500][0m
+[0;32mI (97284) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (97284) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (97294) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (97304) SENSORES_MQTT: MQTT → [mesa4/lux] = 250.74[0m
+[0;32mI (97304) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (97314) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (97314) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (97324) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (97324) SENSORES_MQTT: Mesa4 → Lux: 250.74 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (97334) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (97344) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (97914) SENSORES_MQTT: Mesa3 row7 (zonas 57-62): 2468 1684 1667 2429 2444 2426 mm  janela:[1200,1530][0m
+[0;32mI (97974) SENSORES_MQTT: Mesa4 row7 (zonas 57-62): 2455 2437 1522 1506 1515 1452 mm  janela:[1200,1500][0m
+[0;32mI (97974) SENSORES_MQTT: MQTT → [mesa3/lux] = 0.00[0m
+[0;32mI (97974) SENSORES_MQTT: MQTT → [mesa3/pessoa] = 0[0m
+[0;32mI (97984) SENSORES_MQTT: MQTT → [mesa3/zonas] = 0[0m
+[0;32mI (97994) SENSORES_MQTT: MQTT → [mesa4/lux] = 252.00[0m
+[0;32mI (97994) SENSORES_MQTT: MQTT → [mesa4/pessoa] = 1[0m
+[0;32mI (98004) SENSORES_MQTT: MQTT → [mesa4/zonas] = 1[0m
+[0;32mI (98004) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (98014) SENSORES_MQTT: Mesa3 → Lux: 0.00 lx | Pessoa: 0 (0 zonas)[0m
+[0;32mI (98014) SENSORES_MQTT: Mesa4 → Lux: 252.00 lx | Pessoa: 1 (1 zonas)[0m
+[0;32mI (98024) SENSORES_MQTT: Ambiente → Movimento PIR: 1[0m
+[0;32mI (98034) SENSORES_MQTT: ------------------------------------------------------[0m

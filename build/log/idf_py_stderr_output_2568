@@ -1,0 +1,26 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM6 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40809cda: [0;33mvPortYield[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m654[0m
+[0m--- 0x40809cd0: [0;33mvPortYield[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m654[0m
+[0m--- 0x4206e9ba: [0;33mppCheckIsConnTraffic[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x408096a8: [0;33mxQueueReceive[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1659[0m
+[0m--- 0x40809cda: [0;33mvPortYield[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m654[0m
+[0m--- 0x40809cd0: [0;33mvPortYield[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m654[0m
+[0m--- 0x4206e9ba: [0;33mppCheckIsConnTraffic[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x408096a8: [0;33mxQueueReceive[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1659[0m
+[0m--- 0x40809cda: [0;33mvPortYield[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m654[0m
+[0m--- 0x40809cd0: [0;33mvPortYield[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m654[0m
+[0m--- 0x4206e9ba: [0;33mppCheckIsConnTraffic[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x408096a8: [0;33mxQueueReceive[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1659[0m
+[0m--- 0x40809cda: [0;33mvPortYield[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m654[0m
+[0m--- 0x40809cd0: [0;33mvPortYield[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m654[0m
+[0m--- 0x4206e9ba: [0;33mppCheckIsConnTraffic[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x408096a8: [0;33mxQueueReceive[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1659[0m
+[0m--- 0x40809cda: [0;33mvPortYield[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m654[0m
+[0m--- 0x40809cd0: [0;33mvPortYield[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m654[0m
+[0m--- 0x4206e9ba: [0;33mppCheckIsConnTraffic[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x408096a8: [0;33mxQueueReceive[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1659[0m
+[0m

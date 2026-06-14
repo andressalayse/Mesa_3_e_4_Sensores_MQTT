@@ -1,0 +1,16 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4201af82: [0;33mi2c_ll_master_clr_bus[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/i2c_ll.h[0m[0m:[1;31m767[0m
+[0m--- (inlined by) [0;33mi2c_master_clear_bus[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/i2c/i2c.c[0m[0m:[1;31m687[0m
+[0m--- 0x4201afb2: [0;33mi2c_hw_fsm_reset[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/i2c/i2c.c[0m[0m:[1;31m722[0m
+[0m--- 0x40800e98: [0;33mheap_caps_calloc_base[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c[0m[0m:[1;31m289[0m
+[0m--- 0x4201c7bc: [0;33mi2c_master_cmd_begin[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/i2c/i2c.c[0m[0m:[1;31m1615[0m
+[0m--- 0x4201af82: [0;33mi2c_ll_master_clr_bus[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/i2c_ll.h[0m[0m:[1;31m767[0m
+[0m--- (inlined by) [0;33mi2c_master_clear_bus[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/i2c/i2c.c[0m[0m:[1;31m687[0m
+[0m--- 0x4201afb2: [0;33mi2c_hw_fsm_reset[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/i2c/i2c.c[0m[0m:[1;31m722[0m
+[0m--- 0x40800e98: [0;33mheap_caps_calloc_base[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c[0m[0m:[1;31m289[0m
+[0m--- 0x4201c7bc: [0;33mi2c_master_cmd_begin[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/i2c/i2c.c[0m[0m:[1;31m1615[0m
+[0m

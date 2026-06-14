@@ -1,0 +1,42 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x42008428: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x42008436: [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x42008436: [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x4200841a: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m--- 0x42008410: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m587[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m
+Traceback (most recent call last):
+  File "F:\Espressif\frameworks\esp-idf-v5.3.1\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

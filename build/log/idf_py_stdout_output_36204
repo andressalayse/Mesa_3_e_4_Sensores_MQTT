@@ -1,0 +1,10 @@
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32c6
+NOTICE: Manifest files have changed, solving dependencies.
+.-- Configuring incomplete, errors occurred!
+See also "F:/Projetos/workspace/Mesa_3_e_4_Sensores_MQTT/build/CMakeFiles/CMakeOutput.log".
+[0/1] Re-running CMake...
+FAILED: build.ninja 
+F:\Espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SF:\Projetos\workspace\Mesa_3_e_4_Sensores_MQTT -BF:\Projetos\workspace\Mesa_3_e_4_Sensores_MQTT\build

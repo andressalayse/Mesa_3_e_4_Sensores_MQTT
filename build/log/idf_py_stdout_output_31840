@@ -1,0 +1,772 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x28 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c110,len:0xe2c
+load:0x4086e610,len:0x2e5c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 10 2026 01:58:25[0m
+[0;32mI (24) boot: chip revision: v0.2[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=420b8020 size=2997ch (170364) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=000399a4 vaddr=40800000 size=06674h ( 26228) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=b1104h (725252) map[0m
+[0;32mI (285) esp_image: segment 3: paddr=000f112c vaddr=40806674 size=13714h ( 79636) load[0m
+[0;32mI (304) esp_image: segment 4: paddr=00104848 vaddr=40819d90 size=03b90h ( 15248) load[0m
+[0;32mI (315) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (315) boot: Disabling RNG early entropy source...[0m
+[0;32mI (327) cpu_start: Unicore app[0m
+[0;32mI (336) cpu_start: Pro cpu start user code[0m
+[0;32mI (336) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (336) app_init: Application information:[0m
+[0;32mI (339) app_init: Project name:     app-template[0m
+[0;32mI (344) app_init: App version:      1[0m
+[0;32mI (348) app_init: Compile time:     Apr 10 2026 01:56:56[0m
+[0;32mI (354) app_init: ELF file SHA256:  cdea33d82...[0m
+[0;32mI (359) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (365) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (370) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (374) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (379) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (386) heap_init: At 40823300 len 00059310 (356 KiB): RAM[0m
+[0;32mI (393) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (399) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (406) spi_flash: detected chip: generic[0m
+[0;32mI (410) spi_flash: flash io: dio[0m
+[0;33mW (414) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (427) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (438) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (444) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (451) coexist: coex firmware version: 4482466[0m
+[0;32mI (457) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (462) main_task: Started on CPU0[0m
+[0;32mI (462) main_task: Calling app_main()[0m
+[0;32mI (472) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (482) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (492) wifi:wifi driver task: 4082c2ec, prio:23, stack:6656, core=0[0m
+[0;32mI (492) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (492) wifi:wifi certification version: v7.0[0m
+[0;32mI (492) wifi:config NVS flash: enabled[0m
+[0;32mI (492) wifi:config nano formating: disabled[0m
+[0;32mI (502) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (502) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (512) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (512) wifi:Init management short buffer num: 32[0m
+[0;32mI (522) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (522) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (522) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (532) wifi:Init static rx buffer num: 10[0m
+[0;32mI (532) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (542) wifi_init: rx ba win: 6[0m
+[0;32mI (542) wifi_init: accept mbox: 6[0m
+[0;32mI (552) wifi_init: tcpip mbox: 32[0m
+[0;32mI (552) wifi_init: udp mbox: 6[0m
+[0;32mI (552) wifi_init: tcp mbox: 6[0m
+[0;32mI (562) wifi_init: tcp tx win: 5760[0m
+[0;32mI (562) wifi_init: tcp rx win: 5760[0m
+[0;32mI (562) wifi_init: tcp mss: 1440[0m
+[0;32mI (572) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (572) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (582) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (592) phy_init: phy_version 310,dde1ba9,Jun  4 2024,16:38:11[0m
+[0;33mW (672) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (672) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (682) wifi:(agc)0x600a7128:0xd2024a04, min.avgNF:0xce->0xd2(dB), RCalCount:0x23, min.RRssi:0xa04(-95.75)[0m
+[0;33mW (692) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (692) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (702) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (702) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (702) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (712) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (712) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (712) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (712) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (722) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (722) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (722) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (732) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (742) wifi:(he)attach, station, phymode:11ax[0m
+[0;32mI (742) wifi:mode : sta (58:8c:81:30:19:d0)[0m
+[0;32mI (742) wifi:enable tsf[0m
+[0;31mE (752) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (752) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (762) mqtt_client: Error transport connect[0m
+[0;33mW (762) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (772) mqtt_client: Client force reconnect requested[0m
+[0;31mE (782) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (782) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (792) mqtt_client: Error transport connect[0m
+[0;33mW (802) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (802) mqtt_client: Client force reconnect requested[0m
+[0;31mE (812) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (822) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (822) mqtt_client: Error transport connect[0m
+[0;33mW (832) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (842) mqtt_client: Client force reconnect requested[0m
+[0;31mE (842) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (852) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (852) mqtt_client: Error transport connect[0m
+[0;33mW (862) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (872) mqtt_client: Client force reconnect requested[0m
+[0;31mE (872) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (882) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (892) mqtt_client: Error transport connect[0m
+[0;33mW (892) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (902) mqtt_client: Client force reconnect requested[0m
+[0;31mE (912) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (912) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (922) mqtt_client: Error transport connect[0m
+[0;33mW (922) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (932) mqtt_client: Client force reconnect requested[0m
+[0;31mE (942) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (942) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (952) mqtt_client: Error transport connect[0m
+[0;33mW (962) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (962) mqtt_client: Client force reconnect requested[0m
+[0;31mE (972) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (982) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (982) mqtt_client: Error transport connect[0m
+[0;33mW (992) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1002) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1002) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1012) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1012) mqtt_client: Error transport connect[0m
+[0;33mW (1022) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1032) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1032) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1042) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1052) mqtt_client: Error transport connect[0m
+[0;33mW (1052) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1062) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1072) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1072) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1082) mqtt_client: Error transport connect[0m
+[0;33mW (1082) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1092) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1102) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1112) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1112) mqtt_client: Error transport connect[0m
+[0;33mW (1122) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1132) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1132) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1142) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1142) mqtt_client: Error transport connect[0m
+[0;33mW (1152) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1162) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1162) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1172) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1182) mqtt_client: Error transport connect[0m
+[0;33mW (1182) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1192) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1202) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1202) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1212) mqtt_client: Error transport connect[0m
+[0;33mW (1212) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1222) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1232) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1242) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1242) mqtt_client: Error transport connect[0m
+[0;33mW (1252) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1262) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1262) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1272) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1272) mqtt_client: Error transport connect[0m
+[0;33mW (1282) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1292) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1292) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1302) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1312) mqtt_client: Error transport connect[0m
+[0;33mW (1312) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1322) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1332) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1332) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1342) mqtt_client: Error transport connect[0m
+[0;33mW (1342) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1352) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1362) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1372) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1372) mqtt_client: Error transport connect[0m
+[0;33mW (1382) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1392) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1392) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1402) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1402) mqtt_client: Error transport connect[0m
+[0;33mW (1412) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1422) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1422) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1432) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1442) mqtt_client: Error transport connect[0m
+[0;33mW (1442) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1452) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1462) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1462) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1472) mqtt_client: Error transport connect[0m
+[0;33mW (1472) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1482) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1492) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1502) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1502) mqtt_client: Error transport connect[0m
+[0;33mW (1512) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1522) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1522) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1532) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1532) mqtt_client: Error transport connect[0m
+[0;33mW (1542) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1552) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1552) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1562) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1572) mqtt_client: Error transport connect[0m
+[0;33mW (1572) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1582) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1592) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1592) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1602) mqtt_client: Error transport connect[0m
+[0;33mW (1602) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1612) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1622) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1632) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1632) mqtt_client: Error transport connect[0m
+[0;33mW (1642) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1652) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1652) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1662) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1662) mqtt_client: Error transport connect[0m
+[0;33mW (1672) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1682) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1682) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1692) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1702) mqtt_client: Error transport connect[0m
+[0;33mW (1702) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1712) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1722) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1722) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1732) mqtt_client: Error transport connect[0m
+[0;33mW (1732) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1742) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1752) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1762) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1762) mqtt_client: Error transport connect[0m
+[0;33mW (1772) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1772) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1782) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1792) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1792) mqtt_client: Error transport connect[0m
+[0;33mW (1802) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1812) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1812) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1822) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1832) mqtt_client: Error transport connect[0m
+[0;33mW (1832) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1842) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1852) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1852) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1862) mqtt_client: Error transport connect[0m
+[0;33mW (1862) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1872) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1882) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1882) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1892) mqtt_client: Error transport connect[0m
+[0;33mW (1902) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1902) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1912) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1922) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1922) mqtt_client: Error transport connect[0m
+[0;33mW (1932) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1942) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1942) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1952) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1962) mqtt_client: Error transport connect[0m
+[0;33mW (1962) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1972) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1982) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1982) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1992) mqtt_client: Error transport connect[0m
+[0;33mW (1992) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2002) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2012) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2012) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2022) mqtt_client: Error transport connect[0m
+[0;33mW (2032) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2032) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2042) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2052) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2052) mqtt_client: Error transport connect[0m
+[0;33mW (2062) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2072) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2072) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2082) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2092) mqtt_client: Error transport connect[0m
+[0;33mW (2092) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2102) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2112) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2112) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2122) mqtt_client: Error transport connect[0m
+[0;33mW (2122) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2132) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2142) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2142) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2152) mqtt_client: Error transport connect[0m
+[0;33mW (2162) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2162) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2172) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2182) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2182) mqtt_client: Error transport connect[0m
+[0;33mW (2192) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2202) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2202) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2212) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2222) mqtt_client: Error transport connect[0m
+[0;33mW (2222) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2232) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2242) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2242) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2252) mqtt_client: Error transport connect[0m
+[0;33mW (2252) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2262) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2272) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2272) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2282) mqtt_client: Error transport connect[0m
+[0;33mW (2292) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2292) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2302) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2312) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2312) mqtt_client: Error transport connect[0m
+[0;33mW (2322) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2332) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2332) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2342) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2352) mqtt_client: Error transport connect[0m
+[0;33mW (2352) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2362) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2372) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2372) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2382) mqtt_client: Error transport connect[0m
+[0;33mW (2382) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2392) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2402) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2402) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2412) mqtt_client: Error transport connect[0m
+[0;33mW (2422) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2422) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2432) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2442) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2442) mqtt_client: Error transport connect[0m
+[0;33mW (2452) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2462) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2462) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2472) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2482) mqtt_client: Error transport connect[0m
+[0;33mW (2482) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2492) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2502) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2502) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2512) mqtt_client: Error transport connect[0m
+[0;33mW (2512) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2522) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2532) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2532) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2542) mqtt_client: Error transport connect[0m
+[0;33mW (2552) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2552) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2562) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2572) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2572) mqtt_client: Error transport connect[0m
+[0;33mW (2582) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2592) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2592) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2602) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2612) mqtt_client: Error transport connect[0m
+[0;33mW (2612) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2622) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2632) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2632) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2642) mqtt_client: Error transport connect[0m
+[0;33mW (2642) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2652) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2662) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2662) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2672) mqtt_client: Error transport connect[0m
+[0;33mW (2682) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2682) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2692) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2702) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2702) mqtt_client: Error transport connect[0m
+[0;33mW (2712) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2722) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2722) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2732) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2742) mqtt_client: Error transport connect[0m
+[0;33mW (2742) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2752) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2762) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2762) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2772) mqtt_client: Error transport connect[0m
+[0;33mW (2772) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2782) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2792) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2792) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2802) mqtt_client: Error transport connect[0m
+[0;33mW (2812) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2812) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2822) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2832) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2832) mqtt_client: Error transport connect[0m
+[0;33mW (2842) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2852) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2852) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2862) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2872) mqtt_client: Error transport connect[0m
+[0;33mW (2872) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2882) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2882) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2892) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2902) mqtt_client: Error transport connect[0m
+[0;33mW (2902) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2912) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2922) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2922) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2932) mqtt_client: Error transport connect[0m
+[0;33mW (2942) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2942) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2952) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2962) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2962) mqtt_client: Error transport connect[0m
+[0;33mW (2972) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2982) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2982) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2992) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3002) mqtt_client: Error transport connect[0m
+[0;33mW (3002) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3012) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3012) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3022) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3032) mqtt_client: Error transport connect[0m
+[0;33mW (3032) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3042) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3052) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3052) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3062) mqtt_client: Error transport connect[0m
+[0;33mW (3072) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3072) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3082) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3092) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3092) mqtt_client: Error transport connect[0m
+[0;33mW (3102) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3112) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3112) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3122) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3122) mqtt_client: Error transport connect[0m
+[0;33mW (3132) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3142) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3142) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3152) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3162) mqtt_client: Error transport connect[0m
+[0;33mW (3162) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3172) mqtt_client: Client force reconnect requested[0m
+[0;33mW (3162) SENSORES_MQTT: Wi-Fi desconectado, tentando reconectar...[0m
+[0;31mE (3192) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3492) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3492) mqtt_client: Error transport connect[0m
+[0;33mW (3492) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3502) mqtt_client: Client force reconnect requested[0m
+[0;32mI (3502) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3512) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (3522) wifi:state: init -> auth (0xb0)[0m
+[0;31mE (3522) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (3532) wifi:state: auth -> assoc (0x0)[0m
+[0;31mE (3532) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3542) mqtt_client: Error transport connect[0m
+[0;33mW (3542) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3552) mqtt_client: Client force reconnect requested[0m
+[0;32mI (3542) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3562) wifi:(trc)phytype:CBW20-LGI, snr:36, maxRate:130, highestRateIdx:1[0m
+[0;33mW (3572) wifi:(trc)band:2G, phymode:3, highestRateIdx:1, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (3582) wifi:(trc)band:2G, rate(L-MCS7, rateIdx:1), ampdu(rate:L-MCS7, schedIdx(1, stop:8)), snr:36, ampduState:wait operational[0m
+[0;32mI (3592) wifi:ifidx:0, rssi:-61, nf:-97, phytype(0x2, CBW20-LGI), phymode(0x3, 11bgn), max_rate:130, he:0, vht:0, ht:1[0m
+[0;32mI (3602) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;31mE (3612) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3622) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3622) mqtt_client: Error transport connect[0m
+[0;33mW (3622) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3632) mqtt_client: Client force reconnect requested[0m
+[0;32mI (3622) wifi:connected with PROJETO, aid = 3, channel 1, BW20, bssid = 64:66:b3:41:6e:3e[0m
+[0;32mI (3652) wifi:cipher(pairwise:0x3, group:0x3), pmf:0, security:WPA2-PSK, phy:11bgn, rssi:-61[0m
+[0;31mE (3662) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3662) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3672) mqtt_client: Error transport connect[0m
+[0;33mW (3672) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3682) mqtt_client: Client force reconnect requested[0m
+[0;32mI (3672) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (3692) wifi:pm start, type:1, aid:0x3, trans-BSSID:64:66:b3:41:6e:3e, BSSID[5]:0x3e, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (3702) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (3712) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (3722) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (3732) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (3752) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (3752) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (3762) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;33mW (3772) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x1003e6e, TALO:0x41b36664, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;31mE (3782) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3792) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3792) mqtt_client: Error transport connect[0m
+[0;33mW (3802) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3812) mqtt_client: Client force reconnect requested[0m
+[0;32mI (3792) wifi:AP's beacon interval = 204800 us, DTIM period = 3[0m
+[0;31mE (3822) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3832) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3832) mqtt_client: Error transport connect[0m
+[0;33mW (3842) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3852) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3852) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3862) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3862) mqtt_client: Error transport connect[0m
+[0;33mW (3872) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3882) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3882) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3892) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3902) mqtt_client: Error transport connect[0m
+[0;33mW (3902) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3912) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3922) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3922) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3932) mqtt_client: Error transport connect[0m
+[0;33mW (3932) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3942) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3952) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3962) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3962) mqtt_client: Error transport connect[0m
+[0;33mW (3972) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (3982) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3982) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3992) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3992) mqtt_client: Error transport connect[0m
+[0;33mW (4002) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4012) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4012) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4022) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4032) mqtt_client: Error transport connect[0m
+[0;33mW (4032) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4042) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4052) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4052) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4062) mqtt_client: Error transport connect[0m
+[0;33mW (4062) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4072) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4082) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4092) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4092) mqtt_client: Error transport connect[0m
+[0;33mW (4102) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4112) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4112) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4122) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4122) mqtt_client: Error transport connect[0m
+[0;33mW (4132) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4142) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4142) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4152) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4162) mqtt_client: Error transport connect[0m
+[0;33mW (4162) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4172) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4182) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4182) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4192) mqtt_client: Error transport connect[0m
+[0;33mW (4192) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4202) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4212) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4222) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4222) mqtt_client: Error transport connect[0m
+[0;33mW (4232) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4242) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4242) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4252) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4252) mqtt_client: Error transport connect[0m
+[0;33mW (4262) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4272) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4272) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4282) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4292) mqtt_client: Error transport connect[0m
+[0;33mW (4292) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4302) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4312) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4312) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4322) mqtt_client: Error transport connect[0m
+[0;33mW (4322) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4332) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4342) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4352) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4352) mqtt_client: Error transport connect[0m
+[0;33mW (4362) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4372) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4372) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4382) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4382) mqtt_client: Error transport connect[0m
+[0;33mW (4392) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4402) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4402) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4412) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4422) mqtt_client: Error transport connect[0m
+[0;33mW (4422) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4432) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4442) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4442) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4452) mqtt_client: Error transport connect[0m
+[0;33mW (4452) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4462) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4472) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4482) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4482) mqtt_client: Error transport connect[0m
+[0;33mW (4492) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4502) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4502) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4512) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4512) mqtt_client: Error transport connect[0m
+[0;33mW (4522) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4532) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4532) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4542) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4552) mqtt_client: Error transport connect[0m
+[0;33mW (4552) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4562) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4572) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4572) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4582) mqtt_client: Error transport connect[0m
+[0;33mW (4582) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4592) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4602) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4612) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4612) mqtt_client: Error transport connect[0m
+[0;33mW (4622) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4632) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4632) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4642) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4642) mqtt_client: Error transport connect[0m
+[0;33mW (4652) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4662) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4662) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4672) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4682) mqtt_client: Error transport connect[0m
+[0;33mW (4682) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4692) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4702) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4702) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4712) mqtt_client: Error transport connect[0m
+[0;33mW (4712) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4722) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4732) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (4742) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (4742) SENSORES_MQTT: ✅ Conectado à rede Wi-Fi[0m
+[0;31mE (4732) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4762) mqtt_client: Error transport connect[0m
+[0;33mW (4762) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (4772) mqtt_client: Client force reconnect requested[0m
+[0;32mI (4782) SENSORES_MQTT: Iniciando cliente MQTT...[0m
+[0;32mI (4782) gpio: GPIO[8]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (5342) SENSORES_MQTT: Inicialização concluída.[0m
+[0;32mI (5802) SENSORES_MQTT: Mesa3 → Lux: 81.20 lx | Dist: 6553.50 cm[0m
+[0;32mI (5802) SENSORES_MQTT: Mesa4 → Lux: 51.33 lx | Dist: 6553.50 cm[0m
+[0;32mI (5802) SENSORES_MQTT: Ambiente → Movimento: 1[0m
+[0;32mI (5802) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (6042) SENSORES_MQTT: ✅ Conectado ao broker MQTT[0m
+[0;32mI (7272) SENSORES_MQTT: Mesa3 → Lux: 75.60 lx | Dist: 6553.50 cm[0m
+[0;32mI (7272) SENSORES_MQTT: Mesa4 → Lux: 49.47 lx | Dist: 6553.50 cm[0m
+[0;32mI (7272) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (7272) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (8742) SENSORES_MQTT: Mesa3 → Lux: 75.60 lx | Dist: 6553.50 cm[0m
+[0;32mI (8742) SENSORES_MQTT: Mesa4 → Lux: 48.53 lx | Dist: 6553.50 cm[0m
+[0;32mI (8742) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (8742) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (9042) SENSORES_MQTT: MQTT pronto para publicação após reconexão.[0m
+[0;32mI (10212) SENSORES_MQTT: MQTT → [mesa3/lux] = 74.67[0m
+[0;32mI (10212) SENSORES_MQTT: MQTT → [mesa3/distancia] = 6553.50[0m
+[0;32mI (10212) SENSORES_MQTT: MQTT → [mesa4/lux] = 46.67[0m
+[0;32mI (10222) SENSORES_MQTT: MQTT → [mesa4/distancia] = 6553.50[0m
+[0;32mI (10222) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (10232) SENSORES_MQTT: Mesa3 → Lux: 74.67 lx | Dist: 6553.50 cm[0m
+[0;32mI (10232) SENSORES_MQTT: Mesa4 → Lux: 46.67 lx | Dist: 6553.50 cm[0m
+[0;32mI (10242) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (10252) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (11712) SENSORES_MQTT: MQTT → [mesa3/lux] = 72.80[0m
+[0;32mI (11712) SENSORES_MQTT: MQTT → [mesa3/distancia] = 6553.50[0m
+[0;32mI (11712) SENSORES_MQTT: MQTT → [mesa4/lux] = 47.60[0m
+[0;32mI (11712) SENSORES_MQTT: MQTT → [mesa4/distancia] = 6553.50[0m
+[0;32mI (11722) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (11732) SENSORES_MQTT: Mesa3 → Lux: 72.80 lx | Dist: 6553.50 cm[0m
+[0;32mI (11732) SENSORES_MQTT: Mesa4 → Lux: 47.60 lx | Dist: 6553.50 cm[0m
+[0;32mI (11742) SENSORES_MQTT: Ambiente → Movimento: 1[0m
+[0;32mI (11752) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (13212) SENSORES_MQTT: MQTT → [mesa3/lux] = 75.60[0m
+[0;32mI (13212) SENSORES_MQTT: MQTT → [mesa3/distancia] = 6553.50[0m
+[0;32mI (13212) SENSORES_MQTT: MQTT → [mesa4/lux] = 101.73[0m
+[0;32mI (13212) SENSORES_MQTT: MQTT → [mesa4/distancia] = 6553.50[0m
+[0;32mI (13222) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (13232) SENSORES_MQTT: Mesa3 → Lux: 75.60 lx | Dist: 6553.50 cm[0m
+[0;32mI (13232) SENSORES_MQTT: Mesa4 → Lux: 101.73 lx | Dist: 6553.50 cm[0m
+[0;32mI (13242) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (13252) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (14712) SENSORES_MQTT: MQTT → [mesa3/lux] = 319.20[0m
+[0;32mI (14712) SENSORES_MQTT: MQTT → [mesa3/distancia] = 6553.50[0m
+[0;32mI (14712) SENSORES_MQTT: MQTT → [mesa4/lux] = 248.27[0m
+[0;32mI (14712) SENSORES_MQTT: MQTT → [mesa4/distancia] = 6553.50[0m
+[0;32mI (14722) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (14732) SENSORES_MQTT: Mesa3 → Lux: 319.20 lx | Dist: 6553.50 cm[0m
+[0;32mI (14732) SENSORES_MQTT: Mesa4 → Lux: 248.27 lx | Dist: 6553.50 cm[0m
+[0;32mI (14742) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (14752) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (16212) SENSORES_MQTT: MQTT → [mesa3/lux] = 320.13[0m
+[0;32mI (16212) SENSORES_MQTT: MQTT → [mesa3/distancia] = 6553.50[0m
+[0;32mI (16212) SENSORES_MQTT: MQTT → [mesa4/lux] = 248.27[0m
+[0;32mI (16212) SENSORES_MQTT: MQTT → [mesa4/distancia] = 6553.50[0m
+[0;32mI (16222) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (16232) SENSORES_MQTT: Mesa3 → Lux: 320.13 lx | Dist: 6553.50 cm[0m
+[0;32mI (16232) SENSORES_MQTT: Mesa4 → Lux: 248.27 lx | Dist: 6553.50 cm[0m
+[0;32mI (16242) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (16252) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (17712) SENSORES_MQTT: MQTT → [mesa3/lux] = 220.27[0m
+[0;32mI (17712) SENSORES_MQTT: MQTT → [mesa3/distancia] = 6553.50[0m
+[0;32mI (17712) SENSORES_MQTT: MQTT → [mesa4/lux] = 175.47[0m
+[0;32mI (17722) SENSORES_MQTT: MQTT → [mesa4/distancia] = 6553.50[0m
+[0;32mI (17722) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (17732) SENSORES_MQTT: Mesa3 → Lux: 220.27 lx | Dist: 6553.50 cm[0m
+[0;32mI (17732) SENSORES_MQTT: Mesa4 → Lux: 175.47 lx | Dist: 6553.50 cm[0m
+[0;32mI (17742) SENSORES_MQTT: Ambiente → Movimento: 1[0m
+[0;32mI (17752) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (19212) SENSORES_MQTT: MQTT → [mesa3/lux] = 217.47[0m
+[0;32mI (19212) SENSORES_MQTT: MQTT → [mesa3/distancia] = 6553.50[0m
+[0;32mI (19212) SENSORES_MQTT: MQTT → [mesa4/lux] = 176.40[0m
+[0;32mI (19222) SENSORES_MQTT: MQTT → [mesa4/distancia] = 6553.50[0m
+[0;32mI (19222) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (19232) SENSORES_MQTT: Mesa3 → Lux: 217.47 lx | Dist: 6553.50 cm[0m
+[0;32mI (19232) SENSORES_MQTT: Mesa4 → Lux: 176.40 lx | Dist: 6553.50 cm[0m
+[0;32mI (19242) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (19252) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;31mE (25502) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (25502) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (25502) task_wdt: Tasks currently running:[0m
+[0;31mE (25502) task_wdt: CPU 0: main[0m
+[0;31mE (25502) task_wdt: Print CPU 0 (current core) backtrace[0m
+Print CPU 0 (current core) registers
+Core  0 register dump:
+MEPC    : 0x4201af82  RA      : 0x4201afb2  SP      : 0x40826430  GP      : 0x4081a594  
+TP      : 0x40826580  T0      : 0x40800e98  T1      : 0x00002000  T2      : 0x00000000  
+S0/FP   : 0x408386b0  S1      : 0x00000014  A0      : 0x00000000  A1      : 0x408385cc  
+A2      : 0x00000001  A3      : 0x00000800  A4      : 0x60004000  A5      : 0x00000013  
+A6      : 0x00000004  A7      : 0x00000001  S2      : 0x00000000  S3      : 0x000007d5  
+S4      : 0x40837b3c  S5      : 0x4355bbbb  S6      : 0xe0000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x40837b98  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00000000  MTVEC   : 0x00000014  MCAUSE  : 0x408386b0  MTVAL   : 0x4201c7bc  
+MHARTID : 0x40838474  

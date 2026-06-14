@@ -1,0 +1,143 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM8 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM8 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4200841a: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x42008410: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m587[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x42078fea: [0;33msha_ll_read_digest[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/sha_ll.h[0m[0m:[1;31m147[0m
+[0m--- (inlined by) [0;33msha_hal_read_digest[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/sha_hal.c[0m[0m:[1;31m119[0m
+[0m--- 0x42078fd2: [0;33msha_ll_read_digest[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/sha_ll.h[0m[0m:[1;31m146[0m
+[0m--- (inlined by) [0;33msha_hal_read_digest[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/sha_hal.c[0m[0m:[1;31m119[0m
+[0m--- 0x40000000: [0;33m_start[0m[0m in [0;32mROM[0m
+[0m--- 0x42043c0c: [0;33mesp_sha_read_digest_state[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/port/sha/dma/sha.c[0m[0m:[1;31m80[0m
+[0m--- 0x4202209e: [0;33mtcp_connect[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp_tls.c[0m[0m:[1;31m422[0m
+[0m--- 0x4080e09a: [0;33mieee80211_encap_esfbuf[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x40022494: [0;33mmulti_heap_internal_unlock[0m[0m in [0;32mROM[0m
+[0m--- 0x40800d08: [0;33mheap_caps_aligned_alloc_base[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c[0m[0m:[1;31m152[0m
+[0m--- 0x42008410: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m587[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x42008428: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x4200841a: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x42008410: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m587[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x4200841a: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x42008428: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x42008410: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m587[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x40000000: [0;33m_start[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x42008428: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x40000000: [0;33m_start[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x4200841a: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x4200841a: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x42008428: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x42008428: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x4200841a: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x420a8660: [0;33mmac_tx_chan_offset_new[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x420abe14: [0;33mram_bb_bss_cbw40[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x40030dca: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x40003dc0: [0;33mrom_chip_i2c_readReg[0m[0m in [0;32mROM[0m
+[0m--- 0x40002f6e: [0;33mset_chan_reg[0m[0m in [0;32mROM[0m
+[0m--- 0x4200841a: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x42008428: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x42008410: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m587[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x4200841a: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x42008410: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m587[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x42008410: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m587[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x4200841a: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/uart_ll.h[0m[0m:[1;31m588[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m170[0m
+[0m--- 0x42009542: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m215[0m
+[0m--- 0x40028140: [0;33m__retarget_lock_acquire_recursive[0m[0m in [0;32mROM[0m
+[0m--- 0x420094ce: [0;33muart_write[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m207[0m
+[0m--- 0x42078fe0: [0;33msha_ll_read_digest[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/sha_ll.h[0m[0m:[1;31m147[0m
+[0m--- (inlined by) [0;33msha_hal_read_digest[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/sha_hal.c[0m[0m:[1;31m119[0m
+[0m--- 0x42078fd2: [0;33msha_ll_read_digest[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32c6/include/hal/sha_ll.h[0m[0m:[1;31m146[0m
+[0m--- (inlined by) [0;33msha_hal_read_digest[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/sha_hal.c[0m[0m:[1;31m119[0m
+[0m--- 0x40000000: [0;33m_start[0m[0m in [0;32mROM[0m
+[0m--- 0x42043c0c: [0;33mesp_sha_read_digest_state[0m[0m at [0;32mF:/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/port/sha/dma/sha.c[0m[0m:[1;31m80[0m
+[0m

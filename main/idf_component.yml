@@ -1,0 +1,9 @@
+## IDF Component Manager Manifest File
+dependencies:
+  #espressif/esp-zboss-lib: "^1.0.9"
+  #espressif/esp-zigbee-lib: "^1.0.9"
+  ##espressif/esp_wifi_remote: "*"
+  ## Required IDF version
+  idf:
+    version: '>=5.0.0'
+  rjrp44/vl53l5cx: ^2.0.4

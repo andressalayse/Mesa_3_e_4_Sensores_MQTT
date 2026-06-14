@@ -1,0 +1,12 @@
+CMake Error at F:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/build.cmake:552 (message):
+  ERROR: Cannot establish a connection to the component registry.  Are you
+  connected to the internet?
+
+  URL: https://components-file.espressif.com/components/rjrp44/vl53l5cx.json
+
+Call Stack (most recent call first):
+  F:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

@@ -1,0 +1,919 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x6b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c110,len:0xe2c
+load:0x4086e610,len:0x2e5c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 10 2026 01:58:25[0m
+[0;32mI (24) boot: chip revision: v0.2[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=420b8020 size=2997ch (170364) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=000399a4 vaddr=40800000 size=06674h ( 26228) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=b1104h (725252) map[0m
+[0;32mI (285) esp_image: segment 3: paddr=000f112c vaddr=40806674 size=13714h ( 79636) load[0m
+[0;32mI (304) esp_image: segment 4: paddr=00104848 vaddr=40819d90 size=03b90h ( 15248) load[0m
+[0;32mI (315) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (315) boot: Disabling RNG early entropy source...[0m
+[0;32mI (327) cpu_start: Unicore app[0m
+[0;32mI (336) cpu_start: Pro cpu start user code[0m
+[0;32mI (336) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (336) app_init: Application information:[0m
+[0;32mI (339) app_init: Project name:     app-template[0m
+[0;32mI (344) app_init: App version:      1[0m
+[0;32mI (348) app_init: Compile time:     Apr 10 2026 01:56:56[0m
+[0;32mI (354) app_init: ELF file SHA256:  cdea33d82...[0m
+[0;32mI (359) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (365) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (370) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (374) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (379) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (386) heap_init: At 40823300 len 00059310 (356 KiB): RAM[0m
+[0;32mI (393) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (399) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (406) spi_flash: detected chip: generic[0m
+[0;32mI (410) spi_flash: flash io: dio[0m
+[0;33mW (414) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (427) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (438) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (444) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (451) coexist: coex firmware version: 4482466[0m
+[0;32mI (457) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (462) main_task: Started on CPU0[0m
+[0;32mI (462) main_task: Calling app_main()[0m
+[0;32mI (472) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (482) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (492) wifi:wifi driver task: 4082c2ec, prio:23, stack:6656, core=0[0m
+[0;32mI (492) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (492) wifi:wifi certification version: v7.0[0m
+[0;32mI (492) wifi:config NVS flash: enabled[0m
+[0;32mI (492) wifi:config nano formating: disabled[0m
+[0;32mI (502) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (502) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (512) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (512) wifi:Init management short buffer num: 32[0m
+[0;32mI (522) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (522) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (522) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (532) wifi:Init static rx buffer num: 10[0m
+[0;32mI (532) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (542) wifi_init: rx ba win: 6[0m
+[0;32mI (542) wifi_init: accept mbox: 6[0m
+[0;32mI (552) wifi_init: tcpip mbox: 32[0m
+[0;32mI (552) wifi_init: udp mbox: 6[0m
+[0;32mI (552) wifi_init: tcp mbox: 6[0m
+[0;32mI (562) wifi_init: tcp tx win: 5760[0m
+[0;32mI (562) wifi_init: tcp rx win: 5760[0m
+[0;32mI (562) wifi_init: tcp mss: 1440[0m
+[0;32mI (572) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (572) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (582) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (642) phy_init: phy_version 310,dde1ba9,Jun  4 2024,16:38:11[0m
+[0;33mW (722) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (722) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (722) wifi:(agc)0x600a7128:0xd204fa12, min.avgNF:0xce->0xd2(dB), RCalCount:0x4f, min.RRssi:0xa12(-94.88)[0m
+[0;33mW (732) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (742) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (742) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (742) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (742) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (752) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (752) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (752) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (762) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (762) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (762) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (772) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (772) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (782) wifi:(he)attach, station, phymode:11ax[0m
+[0;32mI (782) wifi:mode : sta (58:8c:81:30:19:d0)[0m
+[0;32mI (792) wifi:enable tsf[0m
+[0;31mE (792) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (802) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1102) mqtt_client: Error transport connect[0m
+[0;33mW (1102) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1112) mqtt_client: Client force reconnect requested[0m
+[0;32mI (1102) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1122) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (1132) wifi:state: init -> auth (0xb0)[0m
+[0;31mE (1142) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (1142) wifi:state: auth -> assoc (0x0)[0m
+[0;31mE (1142) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1152) mqtt_client: Error transport connect[0m
+[0;33mW (1162) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1162) mqtt_client: Client force reconnect requested[0m
+[0;32mI (1152) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1172) wifi:(trc)phytype:CBW20-LGI, snr:57, maxRate:130, highestRateIdx:1[0m
+[0;33mW (1182) wifi:(trc)band:2G, phymode:3, highestRateIdx:1, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (1192) wifi:(trc)band:2G, rate(L-MCS7, rateIdx:1), ampdu(rate:L-MCS7, schedIdx(1, stop:8)), snr:57, ampduState:wait operational[0m
+[0;32mI (1202) wifi:ifidx:0, rssi:-39, nf:-96, phytype(0x2, CBW20-LGI), phymode(0x3, 11bgn), max_rate:130, he:0, vht:0, ht:1[0m
+[0;32mI (1212) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;31mE (1222) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (1232) wifi:connected with PROJETO, aid = 1, channel 1, BW20, bssid = 64:66:b3:41:6e:3e[0m
+[0;32mI (1232) wifi:cipher(pairwise:0x3, group:0x3), pmf:0, security:WPA2-PSK, phy:11bgn, rssi:-39[0m
+[0;31mE (1242) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1252) mqtt_client: Error transport connect[0m
+[0;33mW (1252) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1262) mqtt_client: Client force reconnect requested[0m
+[0;32mI (1252) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (1272) wifi:pm start, type:1, aid:0x1, trans-BSSID:64:66:b3:41:6e:3e, BSSID[5]:0x3e, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (1282) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (1292) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (1302) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (1312) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (1322) wifi:AP's beacon interval = 204800 us, DTIM period = 3[0m
+[0;32mI (1332) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (1342) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (1352) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;31mE (1362) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;33mW (1362) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x1003e6e, TALO:0x41b36664, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;31mE (1372) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1382) mqtt_client: Error transport connect[0m
+[0;33mW (1382) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1392) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1402) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1402) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1412) mqtt_client: Error transport connect[0m
+[0;33mW (1422) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1422) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1432) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1442) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1442) mqtt_client: Error transport connect[0m
+[0;33mW (1452) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1462) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1462) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1472) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1482) mqtt_client: Error transport connect[0m
+[0;33mW (1482) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1492) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1502) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1502) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1512) mqtt_client: Error transport connect[0m
+[0;33mW (1512) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1522) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1532) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1532) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1542) mqtt_client: Error transport connect[0m
+[0;33mW (1552) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1552) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1562) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1572) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1572) mqtt_client: Error transport connect[0m
+[0;33mW (1582) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1592) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1592) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1602) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1612) mqtt_client: Error transport connect[0m
+[0;33mW (1612) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1622) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1632) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1632) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1642) mqtt_client: Error transport connect[0m
+[0;33mW (1642) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1652) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1662) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1662) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1672) mqtt_client: Error transport connect[0m
+[0;33mW (1682) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1682) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1692) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1702) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1702) mqtt_client: Error transport connect[0m
+[0;33mW (1712) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1722) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1722) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1732) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1742) mqtt_client: Error transport connect[0m
+[0;33mW (1742) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1752) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1762) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1762) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1772) mqtt_client: Error transport connect[0m
+[0;33mW (1772) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1782) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1792) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1792) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1802) mqtt_client: Error transport connect[0m
+[0;33mW (1812) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1812) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1822) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1832) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1832) mqtt_client: Error transport connect[0m
+[0;33mW (1842) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1852) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1852) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1862) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1872) mqtt_client: Error transport connect[0m
+[0;33mW (1872) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1882) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1892) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1892) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1902) mqtt_client: Error transport connect[0m
+[0;33mW (1902) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1912) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1922) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1922) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1932) mqtt_client: Error transport connect[0m
+[0;33mW (1942) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1942) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1952) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1962) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1962) mqtt_client: Error transport connect[0m
+[0;33mW (1972) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1982) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1982) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1992) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2002) mqtt_client: Error transport connect[0m
+[0;33mW (2002) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2012) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2022) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2022) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2032) mqtt_client: Error transport connect[0m
+[0;33mW (2032) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2042) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2052) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2052) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2062) mqtt_client: Error transport connect[0m
+[0;33mW (2072) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2072) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2082) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2092) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2092) mqtt_client: Error transport connect[0m
+[0;33mW (2102) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2112) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2112) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2122) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2132) mqtt_client: Error transport connect[0m
+[0;33mW (2132) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2142) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2142) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2152) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2162) mqtt_client: Error transport connect[0m
+[0;33mW (2162) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2172) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2182) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2182) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2192) mqtt_client: Error transport connect[0m
+[0;33mW (2202) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2202) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2212) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2222) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2222) mqtt_client: Error transport connect[0m
+[0;33mW (2232) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2242) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2242) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2252) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2262) mqtt_client: Error transport connect[0m
+[0;33mW (2262) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2272) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2272) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2282) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2292) mqtt_client: Error transport connect[0m
+[0;33mW (2292) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2302) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2312) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2312) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2322) mqtt_client: Error transport connect[0m
+[0;33mW (2332) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2332) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2342) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2352) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2352) mqtt_client: Error transport connect[0m
+[0;33mW (2362) SENSORES_MQTT: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2372) mqtt_client: Client force reconnect requested[0m
+[0;32mI (2362) esp_netif_handlers: sta ip: 192.168.0.100, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2382) SENSORES_MQTT: ✅ Conectado à rede Wi-Fi[0m
+[0;32mI (2392) SENSORES_MQTT: Iniciando cliente MQTT...[0m
+[0;32mI (2392) gpio: GPIO[8]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (2402) SENSORES_MQTT: ✅ Conectado ao broker MQTT[0m
+[0;32mI (2702) SENSORES_MQTT: Inicialização concluída.[0m
+[0;32mI (2822) SENSORES_MQTT: Mesa3 → Lux: 139.07 lx | Dist: 4.20 cm[0m
+[0;32mI (2822) SENSORES_MQTT: Mesa4 → Lux: 18.67 lx | Dist: 13.00 cm[0m
+[0;32mI (2822) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (2822) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (3952) SENSORES_MQTT: Mesa3 → Lux: 140.00 lx | Dist: 4.40 cm[0m
+[0;32mI (3952) SENSORES_MQTT: Mesa4 → Lux: 18.67 lx | Dist: 13.00 cm[0m
+[0;32mI (3952) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (3952) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (5082) SENSORES_MQTT: Mesa3 → Lux: 140.00 lx | Dist: 4.40 cm[0m
+[0;32mI (5082) SENSORES_MQTT: Mesa4 → Lux: 18.67 lx | Dist: 12.90 cm[0m
+[0;32mI (5082) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (5082) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (5412) SENSORES_MQTT: MQTT pronto para publicação após reconexão.[0m
+[0;32mI (6212) SENSORES_MQTT: MQTT → [mesa3/lux] = 138.13[0m
+[0;32mI (6212) SENSORES_MQTT: MQTT → [mesa3/distancia] = 4.10[0m
+[0;32mI (6212) SENSORES_MQTT: MQTT → [mesa4/lux] = 18.67[0m
+[0;32mI (6222) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.70[0m
+[0;32mI (6222) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (6232) SENSORES_MQTT: Mesa3 → Lux: 138.13 lx | Dist: 4.10 cm[0m
+[0;32mI (6232) SENSORES_MQTT: Mesa4 → Lux: 18.67 lx | Dist: 12.70 cm[0m
+[0;32mI (6242) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (6252) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (7372) SENSORES_MQTT: MQTT → [mesa3/lux] = 138.13[0m
+[0;32mI (7372) SENSORES_MQTT: MQTT → [mesa3/distancia] = 4.00[0m
+[0;32mI (7372) SENSORES_MQTT: MQTT → [mesa4/lux] = 18.67[0m
+[0;32mI (7382) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (7382) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (7392) SENSORES_MQTT: Mesa3 → Lux: 138.13 lx | Dist: 4.00 cm[0m
+[0;32mI (7392) SENSORES_MQTT: Mesa4 → Lux: 18.67 lx | Dist: 13.00 cm[0m
+[0;32mI (7402) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (7412) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (8532) SENSORES_MQTT: MQTT → [mesa3/lux] = 140.00[0m
+[0;32mI (8532) SENSORES_MQTT: MQTT → [mesa3/distancia] = 4.40[0m
+[0;32mI (8532) SENSORES_MQTT: MQTT → [mesa4/lux] = 18.67[0m
+[0;32mI (8542) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (8542) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (8552) SENSORES_MQTT: Mesa3 → Lux: 140.00 lx | Dist: 4.40 cm[0m
+[0;32mI (8552) SENSORES_MQTT: Mesa4 → Lux: 18.67 lx | Dist: 13.00 cm[0m
+[0;32mI (8562) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (8572) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (9692) SENSORES_MQTT: MQTT → [mesa3/lux] = 140.00[0m
+[0;32mI (9692) SENSORES_MQTT: MQTT → [mesa3/distancia] = 4.50[0m
+[0;32mI (9692) SENSORES_MQTT: MQTT → [mesa4/lux] = 18.67[0m
+[0;32mI (9702) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (9702) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (9712) SENSORES_MQTT: Mesa3 → Lux: 140.00 lx | Dist: 4.50 cm[0m
+[0;32mI (9712) SENSORES_MQTT: Mesa4 → Lux: 18.67 lx | Dist: 13.00 cm[0m
+[0;32mI (9722) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (9732) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (10852) SENSORES_MQTT: MQTT → [mesa3/lux] = 139.07[0m
+[0;32mI (10852) SENSORES_MQTT: MQTT → [mesa3/distancia] = 8.20[0m
+[0;32mI (10852) SENSORES_MQTT: MQTT → [mesa4/lux] = 18.67[0m
+[0;32mI (10862) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (10862) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (10872) SENSORES_MQTT: Mesa3 → Lux: 139.07 lx | Dist: 8.20 cm[0m
+[0;32mI (10872) SENSORES_MQTT: Mesa4 → Lux: 18.67 lx | Dist: 13.00 cm[0m
+[0;32mI (10882) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (10892) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (12012) SENSORES_MQTT: MQTT → [mesa3/lux] = 139.07[0m
+[0;32mI (12012) SENSORES_MQTT: MQTT → [mesa3/distancia] = 20.50[0m
+[0;32mI (12012) SENSORES_MQTT: MQTT → [mesa4/lux] = 18.67[0m
+[0;32mI (12022) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.70[0m
+[0;32mI (12022) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (12032) SENSORES_MQTT: Mesa3 → Lux: 139.07 lx | Dist: 20.50 cm[0m
+[0;32mI (12032) SENSORES_MQTT: Mesa4 → Lux: 18.67 lx | Dist: 12.70 cm[0m
+[0;32mI (12042) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (12052) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (13172) SENSORES_MQTT: MQTT → [mesa3/lux] = 140.00[0m
+[0;32mI (13172) SENSORES_MQTT: MQTT → [mesa3/distancia] = 14.50[0m
+[0;32mI (13172) SENSORES_MQTT: MQTT → [mesa4/lux] = 18.67[0m
+[0;32mI (13182) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.90[0m
+[0;32mI (13182) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (13192) SENSORES_MQTT: Mesa3 → Lux: 140.00 lx | Dist: 14.50 cm[0m
+[0;32mI (13192) SENSORES_MQTT: Mesa4 → Lux: 18.67 lx | Dist: 12.90 cm[0m
+[0;32mI (13202) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (13212) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (14332) SENSORES_MQTT: MQTT → [mesa3/lux] = 140.00[0m
+[0;32mI (14332) SENSORES_MQTT: MQTT → [mesa3/distancia] = 13.20[0m
+[0;32mI (14332) SENSORES_MQTT: MQTT → [mesa4/lux] = 18.67[0m
+[0;32mI (14342) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (14342) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (14352) SENSORES_MQTT: Mesa3 → Lux: 140.00 lx | Dist: 13.20 cm[0m
+[0;32mI (14352) SENSORES_MQTT: Mesa4 → Lux: 18.67 lx | Dist: 13.00 cm[0m
+[0;32mI (14362) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (14372) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (15492) SENSORES_MQTT: MQTT → [mesa3/lux] = 155.87[0m
+[0;32mI (15492) SENSORES_MQTT: MQTT → [mesa3/distancia] = 13.10[0m
+[0;32mI (15492) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (15502) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (15502) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (15512) SENSORES_MQTT: Mesa3 → Lux: 155.87 lx | Dist: 13.10 cm[0m
+[0;32mI (15512) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 13.00 cm[0m
+[0;32mI (15522) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (15532) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (16652) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (16652) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.90[0m
+[0;32mI (16652) SENSORES_MQTT: MQTT → [mesa4/lux] = 50.40[0m
+[0;32mI (16662) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.70[0m
+[0;32mI (16662) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (16672) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.90 cm[0m
+[0;32mI (16682) SENSORES_MQTT: Mesa4 → Lux: 50.40 lx | Dist: 12.70 cm[0m
+[0;32mI (16682) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (16692) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (17822) SENSORES_MQTT: MQTT → [mesa3/lux] = 155.87[0m
+[0;32mI (17822) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.20[0m
+[0;32mI (17822) SENSORES_MQTT: MQTT → [mesa4/lux] = 53.20[0m
+[0;32mI (17832) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.80[0m
+[0;32mI (17832) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (17842) SENSORES_MQTT: Mesa3 → Lux: 155.87 lx | Dist: 12.20 cm[0m
+[0;32mI (17842) SENSORES_MQTT: Mesa4 → Lux: 53.20 lx | Dist: 12.80 cm[0m
+[0;32mI (17852) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (17862) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (18982) SENSORES_MQTT: MQTT → [mesa3/lux] = 155.87[0m
+[0;32mI (18982) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.20[0m
+[0;32mI (18982) SENSORES_MQTT: MQTT → [mesa4/lux] = 36.40[0m
+[0;32mI (18992) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.70[0m
+[0;32mI (18992) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (19002) SENSORES_MQTT: Mesa3 → Lux: 155.87 lx | Dist: 12.20 cm[0m
+[0;32mI (19002) SENSORES_MQTT: Mesa4 → Lux: 36.40 lx | Dist: 12.70 cm[0m
+[0;32mI (19012) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (19022) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (20142) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (20142) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.00[0m
+[0;32mI (20142) SENSORES_MQTT: MQTT → [mesa4/lux] = 47.60[0m
+[0;32mI (20152) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.10[0m
+[0;32mI (20152) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (20162) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.00 cm[0m
+[0;32mI (20162) SENSORES_MQTT: Mesa4 → Lux: 47.60 lx | Dist: 13.10 cm[0m
+[0;32mI (20172) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (20182) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (21302) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (21302) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.00[0m
+[0;32mI (21302) SENSORES_MQTT: MQTT → [mesa4/lux] = 47.60[0m
+[0;32mI (21312) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.90[0m
+[0;32mI (21312) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (21322) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.00 cm[0m
+[0;32mI (21322) SENSORES_MQTT: Mesa4 → Lux: 47.60 lx | Dist: 12.90 cm[0m
+[0;32mI (21332) SENSORES_MQTT: Ambiente → Movimento: 1[0m
+[0;32mI (21342) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (22462) SENSORES_MQTT: MQTT → [mesa3/lux] = 157.73[0m
+[0;32mI (22462) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.30[0m
+[0;32mI (22462) SENSORES_MQTT: MQTT → [mesa4/lux] = 55.07[0m
+[0;32mI (22472) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.80[0m
+[0;32mI (22482) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (22482) SENSORES_MQTT: Mesa3 → Lux: 157.73 lx | Dist: 12.30 cm[0m
+[0;32mI (22482) SENSORES_MQTT: Mesa4 → Lux: 55.07 lx | Dist: 12.80 cm[0m
+[0;32mI (22492) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (22502) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (23622) SENSORES_MQTT: MQTT → [mesa3/lux] = 155.87[0m
+[0;32mI (23622) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (23622) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (23632) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.80[0m
+[0;32mI (23632) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (23642) SENSORES_MQTT: Mesa3 → Lux: 155.87 lx | Dist: 12.10 cm[0m
+[0;32mI (23642) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.80 cm[0m
+[0;32mI (23652) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (23662) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (24782) SENSORES_MQTT: MQTT → [mesa3/lux] = 157.73[0m
+[0;32mI (24782) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (24782) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (24792) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (24792) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (24802) SENSORES_MQTT: Mesa3 → Lux: 157.73 lx | Dist: 12.10 cm[0m
+[0;32mI (24802) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 13.00 cm[0m
+[0;32mI (24812) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (24822) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (25942) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (25942) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.30[0m
+[0;32mI (25942) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (25952) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.90[0m
+[0;32mI (25952) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (25962) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.30 cm[0m
+[0;32mI (25962) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.90 cm[0m
+[0;32mI (25972) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (25982) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (27102) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (27102) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.30[0m
+[0;32mI (27102) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (27112) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (27112) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (27122) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.30 cm[0m
+[0;32mI (27122) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 13.00 cm[0m
+[0;32mI (27132) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (27142) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (28262) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (28262) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.20[0m
+[0;32mI (28262) SENSORES_MQTT: MQTT → [mesa4/lux] = 55.07[0m
+[0;32mI (28272) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.80[0m
+[0;32mI (28272) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (28282) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.20 cm[0m
+[0;32mI (28282) SENSORES_MQTT: Mesa4 → Lux: 55.07 lx | Dist: 12.80 cm[0m
+[0;32mI (28292) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (28302) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (29422) SENSORES_MQTT: MQTT → [mesa3/lux] = 155.87[0m
+[0;32mI (29422) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.20[0m
+[0;32mI (29422) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (29432) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (29432) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (29442) SENSORES_MQTT: Mesa3 → Lux: 155.87 lx | Dist: 12.20 cm[0m
+[0;32mI (29442) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 13.00 cm[0m
+[0;32mI (29452) SENSORES_MQTT: Ambiente → Movimento: 1[0m
+[0;32mI (29462) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (30582) SENSORES_MQTT: MQTT → [mesa3/lux] = 157.73[0m
+[0;32mI (30582) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.00[0m
+[0;32mI (30582) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (30592) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (30592) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (30602) SENSORES_MQTT: Mesa3 → Lux: 157.73 lx | Dist: 12.00 cm[0m
+[0;32mI (30602) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 13.00 cm[0m
+[0;32mI (30612) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (30622) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (31742) SENSORES_MQTT: MQTT → [mesa3/lux] = 157.73[0m
+[0;32mI (31742) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (31742) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (31752) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.60[0m
+[0;32mI (31752) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (31762) SENSORES_MQTT: Mesa3 → Lux: 157.73 lx | Dist: 12.10 cm[0m
+[0;32mI (31762) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.60 cm[0m
+[0;32mI (31772) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (31782) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (32902) SENSORES_MQTT: MQTT → [mesa3/lux] = 155.87[0m
+[0;32mI (32902) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.40[0m
+[0;32mI (32902) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (32912) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.90[0m
+[0;32mI (32912) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (32922) SENSORES_MQTT: Mesa3 → Lux: 155.87 lx | Dist: 12.40 cm[0m
+[0;32mI (32932) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.90 cm[0m
+[0;32mI (32932) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (32942) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (34072) SENSORES_MQTT: MQTT → [mesa3/lux] = 157.73[0m
+[0;32mI (34072) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (34072) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (34082) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (34082) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (34092) SENSORES_MQTT: Mesa3 → Lux: 157.73 lx | Dist: 12.10 cm[0m
+[0;32mI (34092) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 13.00 cm[0m
+[0;32mI (34102) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (34112) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (35232) SENSORES_MQTT: MQTT → [mesa3/lux] = 157.73[0m
+[0;32mI (35232) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.20[0m
+[0;32mI (35232) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (35242) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.90[0m
+[0;32mI (35242) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (35252) SENSORES_MQTT: Mesa3 → Lux: 157.73 lx | Dist: 12.20 cm[0m
+[0;32mI (35252) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.90 cm[0m
+[0;32mI (35262) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (35272) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (36392) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (36392) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.30[0m
+[0;32mI (36392) SENSORES_MQTT: MQTT → [mesa4/lux] = 55.07[0m
+[0;32mI (36402) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.30[0m
+[0;32mI (36402) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (36412) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.30 cm[0m
+[0;32mI (36412) SENSORES_MQTT: Mesa4 → Lux: 55.07 lx | Dist: 13.30 cm[0m
+[0;32mI (36422) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (36432) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (37552) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (37552) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (37552) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (37562) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.50[0m
+[0;32mI (37562) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (37572) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.10 cm[0m
+[0;32mI (37572) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.50 cm[0m
+[0;32mI (37582) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (37592) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (38712) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (38712) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.00[0m
+[0;32mI (38712) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (38722) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.90[0m
+[0;32mI (38722) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (38732) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.00 cm[0m
+[0;32mI (38732) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.90 cm[0m
+[0;32mI (38742) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (38752) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (39872) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (39872) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (39872) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (39882) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (39882) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (39892) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.10 cm[0m
+[0;32mI (39892) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 13.00 cm[0m
+[0;32mI (39902) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (39912) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (41032) SENSORES_MQTT: MQTT → [mesa3/lux] = 155.87[0m
+[0;32mI (41032) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (41032) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (41042) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.90[0m
+[0;32mI (41042) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (41052) SENSORES_MQTT: Mesa3 → Lux: 155.87 lx | Dist: 12.10 cm[0m
+[0;32mI (41062) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.90 cm[0m
+[0;32mI (41062) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (41072) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (42202) SENSORES_MQTT: MQTT → [mesa3/lux] = 155.87[0m
+[0;32mI (42202) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.20[0m
+[0;32mI (42202) SENSORES_MQTT: MQTT → [mesa4/lux] = 55.07[0m
+[0;32mI (42212) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (42212) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (42222) SENSORES_MQTT: Mesa3 → Lux: 155.87 lx | Dist: 12.20 cm[0m
+[0;32mI (42222) SENSORES_MQTT: Mesa4 → Lux: 55.07 lx | Dist: 13.00 cm[0m
+[0;32mI (42232) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (42242) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (43362) SENSORES_MQTT: MQTT → [mesa3/lux] = 157.73[0m
+[0;32mI (43362) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (43362) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (43372) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.80[0m
+[0;32mI (43372) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (43382) SENSORES_MQTT: Mesa3 → Lux: 157.73 lx | Dist: 12.10 cm[0m
+[0;32mI (43382) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.80 cm[0m
+[0;32mI (43392) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (43402) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (44522) SENSORES_MQTT: MQTT → [mesa3/lux] = 155.87[0m
+[0;32mI (44522) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.30[0m
+[0;32mI (44522) SENSORES_MQTT: MQTT → [mesa4/lux] = 55.07[0m
+[0;32mI (44532) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (44532) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (44542) SENSORES_MQTT: Mesa3 → Lux: 155.87 lx | Dist: 12.30 cm[0m
+[0;32mI (44542) SENSORES_MQTT: Mesa4 → Lux: 55.07 lx | Dist: 13.00 cm[0m
+[0;32mI (44552) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (44562) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (45682) SENSORES_MQTT: MQTT → [mesa3/lux] = 155.87[0m
+[0;32mI (45682) SENSORES_MQTT: MQTT → [mesa3/distancia] = 11.90[0m
+[0;32mI (45682) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (45692) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (45692) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (45702) SENSORES_MQTT: Mesa3 → Lux: 155.87 lx | Dist: 11.90 cm[0m
+[0;32mI (45702) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 13.00 cm[0m
+[0;32mI (45712) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (45722) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (46842) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (46842) SENSORES_MQTT: MQTT → [mesa3/distancia] = 11.90[0m
+[0;32mI (46842) SENSORES_MQTT: MQTT → [mesa4/lux] = 55.07[0m
+[0;32mI (46852) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.90[0m
+[0;32mI (46852) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (46862) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 11.90 cm[0m
+[0;32mI (46862) SENSORES_MQTT: Mesa4 → Lux: 55.07 lx | Dist: 12.90 cm[0m
+[0;32mI (46872) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (46882) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (48002) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (48002) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.40[0m
+[0;32mI (48002) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (48012) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.70[0m
+[0;32mI (48012) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (48022) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.40 cm[0m
+[0;32mI (48022) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.70 cm[0m
+[0;32mI (48032) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (48042) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (49162) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (49162) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.20[0m
+[0;32mI (49162) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (49172) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.90[0m
+[0;32mI (49172) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (49182) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.20 cm[0m
+[0;32mI (49182) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.90 cm[0m
+[0;32mI (49192) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (49202) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (50322) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (50322) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.20[0m
+[0;32mI (50322) SENSORES_MQTT: MQTT → [mesa4/lux] = 55.07[0m
+[0;32mI (50332) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.10[0m
+[0;32mI (50332) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (50342) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.20 cm[0m
+[0;32mI (50342) SENSORES_MQTT: Mesa4 → Lux: 55.07 lx | Dist: 13.10 cm[0m
+[0;32mI (50352) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (50362) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (51482) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (51482) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (51482) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (51492) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.80[0m
+[0;32mI (51492) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (51502) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.10 cm[0m
+[0;32mI (51502) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.80 cm[0m
+[0;32mI (51512) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (51522) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (52642) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (52642) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (52642) SENSORES_MQTT: MQTT → [mesa4/lux] = 55.07[0m
+[0;32mI (52652) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.80[0m
+[0;32mI (52652) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (52662) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.10 cm[0m
+[0;32mI (52662) SENSORES_MQTT: Mesa4 → Lux: 55.07 lx | Dist: 12.80 cm[0m
+[0;32mI (52672) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (52682) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (53802) SENSORES_MQTT: MQTT → [mesa3/lux] = 155.87[0m
+[0;32mI (53802) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.00[0m
+[0;32mI (53802) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (53812) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.90[0m
+[0;32mI (53812) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (53822) SENSORES_MQTT: Mesa3 → Lux: 155.87 lx | Dist: 12.00 cm[0m
+[0;32mI (53822) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.90 cm[0m
+[0;32mI (53832) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (53842) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (54962) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (54962) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (54962) SENSORES_MQTT: MQTT → [mesa4/lux] = 55.07[0m
+[0;32mI (54972) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.20[0m
+[0;32mI (54972) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (54982) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.10 cm[0m
+[0;32mI (54982) SENSORES_MQTT: Mesa4 → Lux: 55.07 lx | Dist: 13.20 cm[0m
+[0;32mI (54992) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (55002) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (56122) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (56122) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.20[0m
+[0;32mI (56122) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (56132) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.90[0m
+[0;32mI (56132) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (56142) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.20 cm[0m
+[0;32mI (56142) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.90 cm[0m
+[0;32mI (56152) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (56162) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (57282) SENSORES_MQTT: MQTT → [mesa3/lux] = 155.87[0m
+[0;32mI (57282) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.50[0m
+[0;32mI (57282) SENSORES_MQTT: MQTT → [mesa4/lux] = 55.07[0m
+[0;32mI (57292) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.10[0m
+[0;32mI (57292) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (57302) SENSORES_MQTT: Mesa3 → Lux: 155.87 lx | Dist: 12.50 cm[0m
+[0;32mI (57302) SENSORES_MQTT: Mesa4 → Lux: 55.07 lx | Dist: 13.10 cm[0m
+[0;32mI (57312) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (57322) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (58442) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (58442) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.20[0m
+[0;32mI (58442) SENSORES_MQTT: MQTT → [mesa4/lux] = 54.13[0m
+[0;32mI (58452) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.80[0m
+[0;32mI (58452) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (58462) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.20 cm[0m
+[0;32mI (58462) SENSORES_MQTT: Mesa4 → Lux: 54.13 lx | Dist: 12.80 cm[0m
+[0;32mI (58472) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (58482) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (59602) SENSORES_MQTT: MQTT → [mesa3/lux] = 157.73[0m
+[0;32mI (59602) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.40[0m
+[0;32mI (59602) SENSORES_MQTT: MQTT → [mesa4/lux] = 55.07[0m
+[0;32mI (59612) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (59612) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (59622) SENSORES_MQTT: Mesa3 → Lux: 157.73 lx | Dist: 12.40 cm[0m
+[0;32mI (59622) SENSORES_MQTT: Mesa4 → Lux: 55.07 lx | Dist: 13.00 cm[0m
+[0;32mI (59632) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (59642) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (60762) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (60762) SENSORES_MQTT: MQTT → [mesa3/distancia] = 11.90[0m
+[0;32mI (60762) SENSORES_MQTT: MQTT → [mesa4/lux] = 55.07[0m
+[0;32mI (60772) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.10[0m
+[0;32mI (60772) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (60782) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 11.90 cm[0m
+[0;32mI (60782) SENSORES_MQTT: Mesa4 → Lux: 55.07 lx | Dist: 13.10 cm[0m
+[0;32mI (60792) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (60802) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (61922) SENSORES_MQTT: MQTT → [mesa3/lux] = 154.00[0m
+[0;32mI (61922) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (61922) SENSORES_MQTT: MQTT → [mesa4/lux] = 42.00[0m
+[0;32mI (61932) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.90[0m
+[0;32mI (61932) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (61942) SENSORES_MQTT: Mesa3 → Lux: 154.00 lx | Dist: 12.10 cm[0m
+[0;32mI (61942) SENSORES_MQTT: Mesa4 → Lux: 42.00 lx | Dist: 12.90 cm[0m
+[0;32mI (61952) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (61962) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (63082) SENSORES_MQTT: MQTT → [mesa3/lux] = 55.07[0m
+[0;32mI (63082) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.30[0m
+[0;32mI (63082) SENSORES_MQTT: MQTT → [mesa4/lux] = 36.40[0m
+[0;32mI (63092) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (63092) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (63102) SENSORES_MQTT: Mesa3 → Lux: 55.07 lx | Dist: 12.30 cm[0m
+[0;32mI (63102) SENSORES_MQTT: Mesa4 → Lux: 36.40 lx | Dist: 13.00 cm[0m
+[0;32mI (63112) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (63122) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (64242) SENSORES_MQTT: MQTT → [mesa3/lux] = 59.73[0m
+[0;32mI (64242) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.30[0m
+[0;32mI (64242) SENSORES_MQTT: MQTT → [mesa4/lux] = 33.60[0m
+[0;32mI (64252) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.00[0m
+[0;32mI (64262) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (64262) SENSORES_MQTT: Mesa3 → Lux: 59.73 lx | Dist: 12.30 cm[0m
+[0;32mI (64272) SENSORES_MQTT: Mesa4 → Lux: 33.60 lx | Dist: 13.00 cm[0m
+[0;32mI (64272) SENSORES_MQTT: Ambiente → Movimento: 1[0m
+[0;32mI (64282) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (65412) SENSORES_MQTT: MQTT → [mesa3/lux] = 17.73[0m
+[0;32mI (65412) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (65412) SENSORES_MQTT: MQTT → [mesa4/lux] = 32.67[0m
+[0;32mI (65422) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.40[0m
+[0;32mI (65422) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (65432) SENSORES_MQTT: Mesa3 → Lux: 17.73 lx | Dist: 12.10 cm[0m
+[0;32mI (65432) SENSORES_MQTT: Mesa4 → Lux: 32.67 lx | Dist: 13.40 cm[0m
+[0;32mI (65442) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (65452) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (66572) SENSORES_MQTT: MQTT → [mesa3/lux] = 18.67[0m
+[0;32mI (66572) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.00[0m
+[0;32mI (66572) SENSORES_MQTT: MQTT → [mesa4/lux] = 27.07[0m
+[0;32mI (66582) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.90[0m
+[0;32mI (66582) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (66592) SENSORES_MQTT: Mesa3 → Lux: 18.67 lx | Dist: 12.00 cm[0m
+[0;32mI (66592) SENSORES_MQTT: Mesa4 → Lux: 27.07 lx | Dist: 13.90 cm[0m
+[0;32mI (66602) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (66612) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (67732) SENSORES_MQTT: MQTT → [mesa3/lux] = 50.40[0m
+[0;32mI (67732) SENSORES_MQTT: MQTT → [mesa3/distancia] = 11.90[0m
+[0;32mI (67732) SENSORES_MQTT: MQTT → [mesa4/lux] = 38.27[0m
+[0;32mI (67742) SENSORES_MQTT: MQTT → [mesa4/distancia] = 8.50[0m
+[0;32mI (67742) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (67752) SENSORES_MQTT: Mesa3 → Lux: 50.40 lx | Dist: 11.90 cm[0m
+[0;32mI (67752) SENSORES_MQTT: Mesa4 → Lux: 38.27 lx | Dist: 8.50 cm[0m
+[0;32mI (67762) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (67772) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (68892) SENSORES_MQTT: MQTT → [mesa3/lux] = 153.07[0m
+[0;32mI (68892) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (68892) SENSORES_MQTT: MQTT → [mesa4/lux] = 35.47[0m
+[0;32mI (68902) SENSORES_MQTT: MQTT → [mesa4/distancia] = 12.00[0m
+[0;32mI (68902) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (68912) SENSORES_MQTT: Mesa3 → Lux: 153.07 lx | Dist: 12.10 cm[0m
+[0;32mI (68912) SENSORES_MQTT: Mesa4 → Lux: 35.47 lx | Dist: 12.00 cm[0m
+[0;32mI (68922) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (68932) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (70052) SENSORES_MQTT: MQTT → [mesa3/lux] = 117.60[0m
+[0;32mI (70052) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (70052) SENSORES_MQTT: MQTT → [mesa4/lux] = 42.93[0m
+[0;32mI (70062) SENSORES_MQTT: MQTT → [mesa4/distancia] = 10.10[0m
+[0;32mI (70062) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (70072) SENSORES_MQTT: Mesa3 → Lux: 117.60 lx | Dist: 12.10 cm[0m
+[0;32mI (70072) SENSORES_MQTT: Mesa4 → Lux: 42.93 lx | Dist: 10.10 cm[0m
+[0;32mI (70082) SENSORES_MQTT: Ambiente → Movimento: 1[0m
+[0;32mI (70092) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (71212) SENSORES_MQTT: MQTT → [mesa3/lux] = 160.53[0m
+[0;32mI (71212) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (71212) SENSORES_MQTT: MQTT → [mesa4/lux] = 41.07[0m
+[0;32mI (71222) SENSORES_MQTT: MQTT → [mesa4/distancia] = 50.90[0m
+[0;32mI (71222) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (71232) SENSORES_MQTT: Mesa3 → Lux: 160.53 lx | Dist: 12.10 cm[0m
+[0;32mI (71232) SENSORES_MQTT: Mesa4 → Lux: 41.07 lx | Dist: 50.90 cm[0m
+[0;32mI (71242) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (71252) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (72372) SENSORES_MQTT: MQTT → [mesa3/lux] = 159.60[0m
+[0;32mI (72372) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.00[0m
+[0;32mI (72372) SENSORES_MQTT: MQTT → [mesa4/lux] = 41.07[0m
+[0;32mI (72382) SENSORES_MQTT: MQTT → [mesa4/distancia] = 22.50[0m
+[0;32mI (72382) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (72392) SENSORES_MQTT: Mesa3 → Lux: 159.60 lx | Dist: 12.00 cm[0m
+[0;32mI (72392) SENSORES_MQTT: Mesa4 → Lux: 41.07 lx | Dist: 22.50 cm[0m
+[0;32mI (72402) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (72412) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (73532) SENSORES_MQTT: MQTT → [mesa3/lux] = 160.53[0m
+[0;32mI (73532) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.00[0m
+[0;32mI (73532) SENSORES_MQTT: MQTT → [mesa4/lux] = 40.13[0m
+[0;32mI (73542) SENSORES_MQTT: MQTT → [mesa4/distancia] = 61.30[0m
+[0;32mI (73542) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (73552) SENSORES_MQTT: Mesa3 → Lux: 160.53 lx | Dist: 12.00 cm[0m
+[0;32mI (73562) SENSORES_MQTT: Mesa4 → Lux: 40.13 lx | Dist: 61.30 cm[0m
+[0;32mI (73562) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (73572) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (74692) SENSORES_MQTT: MQTT → [mesa3/lux] = 159.60[0m
+[0;32mI (74692) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.00[0m
+[0;32mI (74692) SENSORES_MQTT: MQTT → [mesa4/lux] = 40.13[0m
+[0;32mI (74702) SENSORES_MQTT: MQTT → [mesa4/distancia] = 59.70[0m
+[0;32mI (74702) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (74712) SENSORES_MQTT: Mesa3 → Lux: 159.60 lx | Dist: 12.00 cm[0m
+[0;32mI (74712) SENSORES_MQTT: Mesa4 → Lux: 40.13 lx | Dist: 59.70 cm[0m
+[0;32mI (74722) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (74732) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (75852) SENSORES_MQTT: MQTT → [mesa3/lux] = 162.40[0m
+[0;32mI (75852) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (75852) SENSORES_MQTT: MQTT → [mesa4/lux] = 40.13[0m
+[0;32mI (75862) SENSORES_MQTT: MQTT → [mesa4/distancia] = 13.40[0m
+[0;32mI (75862) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (75872) SENSORES_MQTT: Mesa3 → Lux: 162.40 lx | Dist: 12.10 cm[0m
+[0;32mI (75872) SENSORES_MQTT: Mesa4 → Lux: 40.13 lx | Dist: 13.40 cm[0m
+[0;32mI (75882) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (75892) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (77022) SENSORES_MQTT: MQTT → [mesa3/lux] = 161.47[0m
+[0;32mI (77022) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.20[0m
+[0;32mI (77022) SENSORES_MQTT: MQTT → [mesa4/lux] = 40.13[0m
+[0;32mI (77032) SENSORES_MQTT: MQTT → [mesa4/distancia] = 819.00[0m
+[0;32mI (77032) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (77042) SENSORES_MQTT: Mesa3 → Lux: 161.47 lx | Dist: 12.20 cm[0m
+[0;32mI (77042) SENSORES_MQTT: Mesa4 → Lux: 40.13 lx | Dist: 819.00 cm[0m
+[0;32mI (77052) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (77062) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (78182) SENSORES_MQTT: MQTT → [mesa3/lux] = 159.60[0m
+[0;32mI (78182) SENSORES_MQTT: MQTT → [mesa3/distancia] = 11.90[0m
+[0;32mI (78182) SENSORES_MQTT: MQTT → [mesa4/lux] = 40.13[0m
+[0;32mI (78192) SENSORES_MQTT: MQTT → [mesa4/distancia] = 69.50[0m
+[0;32mI (78192) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (78202) SENSORES_MQTT: Mesa3 → Lux: 159.60 lx | Dist: 11.90 cm[0m
+[0;32mI (78202) SENSORES_MQTT: Mesa4 → Lux: 40.13 lx | Dist: 69.50 cm[0m
+[0;32mI (78212) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (78222) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (79342) SENSORES_MQTT: MQTT → [mesa3/lux] = 156.80[0m
+[0;32mI (79342) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (79342) SENSORES_MQTT: MQTT → [mesa4/lux] = 28.93[0m
+[0;32mI (79352) SENSORES_MQTT: MQTT → [mesa4/distancia] = 25.40[0m
+[0;32mI (79362) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (79362) SENSORES_MQTT: Mesa3 → Lux: 156.80 lx | Dist: 12.10 cm[0m
+[0;32mI (79362) SENSORES_MQTT: Mesa4 → Lux: 28.93 lx | Dist: 25.40 cm[0m
+[0;32mI (79372) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (79382) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (80502) SENSORES_MQTT: MQTT → [mesa3/lux] = 159.60[0m
+[0;32mI (80502) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.00[0m
+[0;32mI (80502) SENSORES_MQTT: MQTT → [mesa4/lux] = 43.87[0m
+[0;32mI (80512) SENSORES_MQTT: MQTT → [mesa4/distancia] = 17.10[0m
+[0;32mI (80512) SENSORES_MQTT: MQTT → [ambiente/movimento] = 1[0m
+[0;32mI (80522) SENSORES_MQTT: Mesa3 → Lux: 159.60 lx | Dist: 12.00 cm[0m
+[0;32mI (80522) SENSORES_MQTT: Mesa4 → Lux: 43.87 lx | Dist: 17.10 cm[0m
+[0;32mI (80532) SENSORES_MQTT: Ambiente → Movimento: 1[0m
+[0;32mI (80542) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (81662) SENSORES_MQTT: MQTT → [mesa3/lux] = 142.80[0m
+[0;32mI (81662) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (81662) SENSORES_MQTT: MQTT → [mesa4/lux] = 22.40[0m
+[0;32mI (81672) SENSORES_MQTT: MQTT → [mesa4/distancia] = 17.10[0m
+[0;32mI (81682) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (81682) SENSORES_MQTT: Mesa3 → Lux: 142.80 lx | Dist: 12.10 cm[0m
+[0;32mI (81682) SENSORES_MQTT: Mesa4 → Lux: 22.40 lx | Dist: 17.10 cm[0m
+[0;32mI (81692) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (81702) SENSORES_MQTT: ------------------------------------------------------[0m
+[0;32mI (82822) SENSORES_MQTT: MQTT → [mesa3/lux] = 142.80[0m
+[0;32mI (82822) SENSORES_MQTT: MQTT → [mesa3/distancia] = 12.10[0m
+[0;32mI (82822) SENSORES_MQTT: MQTT → [mesa4/lux] = 23.33[0m
+[0;32mI (82832) SENSORES_MQTT: MQTT → [mesa4/distancia] = 17.10[0m
+[0;32mI (82832) SENSORES_MQTT: MQTT → [ambiente/movimento] = 0[0m
+[0;32mI (82842) SENSORES_MQTT: Mesa3 → Lux: 142.80 lx | Dist: 12.10 cm[0m
+[0;32mI (82842) SENSORES_MQTT: Mesa4 → Lux: 23.33 lx | Dist: 17.10 cm[0m
+[0;32mI (82852) SENSORES_MQTT: Ambiente → Movimento: 0[0m
+[0;32mI (82862) SENSORES_MQTT: ------------------------------------------------------[0m
